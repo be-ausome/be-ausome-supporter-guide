@@ -1,24 +1,53 @@
-// /api/supporter-gpt.js
-export default async function handler(req, res) {
-  // Read the JSON body if it exists (optional sanity check)
-  let body = {};
-  if (req.method === "POST") {
-    try {
-      body = req.body ?? {};
-    } catch (_) {}
+// /api/supporter-gpt.js  — Step 3-A loader
+import { promises as fs } from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
 
-    /* Quick guard: if no message, let the caller know. */
-    if (!body.message) {
-      return res.status(400).json({
-        error: "Missing 'message' field in request body."
-      });
-    }
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const CONTENT_DIR = path.join(__dirname, "..", "content");
+
+/* ---------- load every file once on cold-start ---------- */
+let routerRules = [];
+let scriptRaw = "";
+let contentLoaded = false;
+
+async function loadContentOnce() {
+  if (contentLoaded) return;        // hot reuse
+  try {
+    routerRules = JSON.parse(
+      await fs.readFile(
+        path.join(
+          CONTENT_DIR,
+          "supporter_prompt_router_GALACTIC_CORE_descriptive_v3.json"
+        ),
+        "utf8"
+      )
+    );
+
+    scriptRaw = await fs.readFile(
+      path.join(
+        CONTENT_DIR,
+        "supporter_script_library_REAL_CONTENT_v14.txt"
+      ),
+      "utf8"
+    );
+
+    contentLoaded = true;
+    console.log("[Supporter-GPT] Content library loaded ✅");
+  } catch (err) {
+    console.error("❌ Failed to load content files:", err);
+    throw err;                      // fail the function so Vercel shows an error
   }
+}
 
-  // Placeholder success response
+/* ---------- API handler ---------- */
+export default async function handler(req, res) {
+  await loadContentOnce();
+
   return res.status(200).json({
     ok: true,
-    stub: "Supporter GPT endpoint is live ♡",
-    echo: body
+    message: "Content library loaded into memory",
+    routerRules: routerRules.length,
+    scriptChars: scriptRaw.length
   });
 }
