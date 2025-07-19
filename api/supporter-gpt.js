@@ -18,7 +18,7 @@ async function loadContentOnce() {
       await fs.readFile(
         path.join(
           CONTENT_DIR,
-          "supporter_prompt_router_GALACTIC_CORE_descriptive_v3.json"
+          "supporter_prompt_router_GALACTIC_CORE_descriptive_v3_SECURE.json"
         ),
         "utf8"
       )
@@ -39,6 +39,16 @@ async function loadContentOnce() {
     throw err;                      // fail the function so Vercel shows an error
   }
 }
+{
+  "version": 2,
+  "functions": {
+    "api/**/*.js": {
+      "runtime": "vercel/node@20",
+      "includeFiles": "content/**"
+    }
+  }
+}
+
 
 /* ---------- API handler ---------- */
 export default async function handler(req, res) {
