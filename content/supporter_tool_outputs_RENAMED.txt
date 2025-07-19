@@ -1,0 +1,437 @@
+---
+
+📖 Script ID: grocery\_offer\_story
+🧰 Tool Outputs:
+
+📱 Text Message Mode:
+“Hey! I’m headed to the store—need anything? Totally no pressure, just thought I’d check.”
+
+📣 Social Caption Mode:
+Support doesn’t need to be big. Just real.
+🛒 Today’s reminder: Text a caregiver before you shop.
+“I’m headed to the store—need anything?”
+That one line might lift their whole day.
+
+🖼️ Printable Mode:
+I’m headed to the store—can I grab anything for you?
+No pressure. Just one neighbor looking out for another.
+
+📘 Guide Mode:
+✅ OFFER HELP
+Instead of asking *if* they need help, offer what you’re already doing:
+“I’m going to the store—can I grab anything for you?”
+Keep it low-pressure and specific.
+
+---
+
+📖 Script ID: text\_checkin\_story
+🧰 Tool Outputs:
+
+📱 Text Message Mode:
+“Thinking of you today—no pressure to reply. Just wanted you to know.”
+
+📣 Social Caption Mode:
+A reminder: Some people just need to know you *see* them.
+💬 “Thinking of you today. No pressure—just sending care.”
+That message could be the one that carries them.
+
+🖼️ Printable Mode:
+Just thinking of you today.
+No pressure. No expectation. Just presence.
+
+📘 Guide Mode:
+✅ STAY CONNECTED
+Reach out without needing a reply.
+One line of presence can soften someone’s whole week.
+
+---
+
+📖 Script ID: dinner\_drop\_story
+🧰 Tool Outputs:
+
+📱 Text Message Mode:
+“Leaving dinner on your porch around 6. No need to answer—just hope it helps.”
+
+📣 Social Caption Mode:
+Real support is warm, quiet, and edible.
+🍽️ Drop off a meal. Say nothing. Be love.
+
+🖼️ Printable Mode:
+Dinner’s on your porch tonight. No need to answer. Just heat and eat. You’re not alone.
+
+📘 Guide Mode:
+✅ FEED WITHOUT FUSS
+Help by handling a meal start to finish.
+Say: “Dinner’s dropped off. No response needed.”
+
+---
+
+📖 Script ID: coffee\_dropoff\_story
+🧰 Tool Outputs:
+
+📱 Text Message Mode:
+“Dropped off a little something for you—no pressure. Just thought it might help.”
+
+📣 Social Caption Mode:
+Even coffee can carry care. ☕
+You don’t need to ask what someone needs—sometimes, you just *bring* it.
+
+🖼️ Printable Mode:
+You’ve got this. Thought a little coffee might help today. 💛
+
+📘 Guide Mode:
+✅ UPLIFT WITHOUT WORDS
+Drop something off that says: “I see you. I’ve got your back.”
+No speech. No demand. Just support.
+
+---
+
+📖 Script ID: quiet\_presence\_during\_hospital\_story
+🧰 Tool Outputs:
+
+📱 Text Message Mode:
+“I’m nearby if you want quiet company. No pressure—just here.”
+
+📣 Social Caption Mode:
+You don’t have to fix anything. Just sit with them.
+Quiet presence is real support.
+
+🖼️ Printable Mode:
+No advice. No expectations. Just me, sitting with you through it.
+
+📘 Guide Mode:
+✅ SHOW UP SOFTLY
+Being there—even silently—can bring more comfort than words.
+
+---
+
+📖 Script ID: post-meltdown\_reconnect\_story
+🧰 Tool Outputs:
+
+📱 Text Message Mode:
+“Want to sit with me for a bit? We don’t have to talk.”
+
+📣 Social Caption Mode:
+After a meltdown, love should feel like warmth—not words.
+Start with presence. Safety follows.
+
+🖼️ Printable Mode:
+Here’s a blanket. Come sit with me. That’s all.
+
+📘 Guide Mode:
+✅ RECONNECT GENTLY
+Lead with comfort, not conversation. Let your warmth say, “You’re still safe here.”
+
+---
+
+📖 Script ID: shutdown\_during\_transition\_story
+🧰 Tool Outputs:
+
+📱 Text Message Mode:
+“I’m here. No rush. Just sitting nearby if you need me.”
+
+📣 Social Caption Mode:
+Support doesn’t have to push. Sometimes it waits.
+Be the calm near the pause.
+
+🖼️ Printable Mode:
+I’m nearby. No hurry. You’ve got time.
+
+📘 Guide Mode:
+✅ HONOR STILLNESS
+Stay close without expectation. That pause might be what they need most.
+
+---
+
+📖 Script ID: soothing\_during\_noise\_story
+🧰 Tool Outputs:
+
+📱 Text Message Mode:
+*Hands over headphones quietly*
+“You good with these?”
+
+📣 Social Caption Mode:
+You don’t have to ask for help if someone sees you first.
+Offer the headphones. Offer the calm.
+
+🖼️ Printable Mode:
+Here if you need these. No big deal. Just thought they might help.
+
+📘 Guide Mode:
+✅ QUIET SUPPORT
+Act before it escalates. Offer tools without spotlight.
+
+---
+
+📖 Script ID: classroom\_quiet\_space\_story
+🧰 Tool Outputs:
+
+📱 Text Message Mode:
+“This is your calm corner. Use it whenever you need a break.”
+
+📣 Social Caption Mode:
+Every student deserves a soft place to land.
+📘 Make quiet spaces normal—not special.
+
+🖼️ Printable Mode:
+This is your calm space. You can come here whenever you need to feel better.
+
+📘 Guide Mode:
+✅ BUILD SAFETY INTO THE ROOM
+Normalize breaks for *everyone*. Quiet space = empowered space.
+
+---
+
+📖 Script ID: office\_staff\_flexibility\_story
+🧰 Tool Outputs:
+
+📱 Text Message Mode:
+“Totally fine to take a few minutes here. Let me know when you’re ready.”
+
+📣 Social Caption Mode:
+The front desk can be the front line of empathy.
+One welcome. One book. One breath. That’s all it takes.
+
+🖼️ Printable Mode:
+It’s okay to sit here and reset. Take all the time you need.
+
+📘 Guide Mode:
+✅ FLEX FOR FEELINGS
+Have a soft place ready for when the classroom is too much.
+
+---
+
+📖 Script ID: bus\_driver\_consistency\_story
+🧰 Tool Outputs:
+
+📱 Text Message Mode:
+“Good morning, captain—your seat’s ready!”
+
+📣 Social Caption Mode:
+Same words. Every day. Same safety.
+Predictability = belonging.
+
+🖼️ Printable Mode:
+Your seat’s ready. Glad you’re here.
+
+📘 Guide Mode:
+✅ BUILD A SAFE START
+Make the transition predictable with the same phrase, tone, and welcome ritual.
+
+---
+
+📖 Script ID: quiet_checkin_story
+🧰 Tool Outputs:
+
+📱 Text Message Mode:
+I know today was a lot. No pressure to talk—just here if you need anything.
+
+📣 Social Caption Mode:
+You don’t have to say much. Just being nearby, without pressure, is its own kind of love.
+
+🖼️ Printable Mode:
+I’m here. No pressure. Just thinking of you.
+
+📘 Guide Mode:
+✅ BE THERE WITHOUT WORDS
+Let presence speak louder than advice. A quiet check-in can soften everything.
+
+---
+
+📖 Script ID: offer_coverage_story
+🧰 Tool Outputs:
+
+📱 Text Message Mode:
+If you need a break, I’ve got things covered here. Take your time.
+
+📣 Social Caption Mode:
+Real support says: 'Take the break. I’ve got this.'
+
+🖼️ Printable Mode:
+You rest. I’ll handle things for now.
+
+📘 Guide Mode:
+✅ OFFER COVERAGE
+Give them permission to pause by handling something they usually carry.
+
+---
+
+📖 Script ID: reflect_strength_story
+🧰 Tool Outputs:
+
+📱 Text Message Mode:
+I saw what happened earlier. You handled it with so much love.
+
+📣 Social Caption Mode:
+Sometimes what looks like chaos is actually courage. Tell them you saw their strength.
+
+🖼️ Printable Mode:
+You handled that moment with so much grace.
+
+📘 Guide Mode:
+✅ REFLECT THEIR STRENGTH
+Reassurance matters. Let them know what you witnessed was love, not failure.
+
+---
+
+📖 Script ID: specific_offer_meal_story
+🧰 Tool Outputs:
+
+📱 Text Message Mode:
+Would it help if I dropped off dinner tomorrow? Totally fine if not—just offering.
+
+📣 Social Caption Mode:
+Helping doesn’t have to be huge. A meal, a message, a moment of ease.
+
+🖼️ Printable Mode:
+Dinner’s on me tomorrow, if that would help. No pressure at all.
+
+📘 Guide Mode:
+✅ MAKE A SPECIFIC OFFER
+Instead of “Let me know,” offer something tangible and optional.
+
+---
+
+📖 Script ID: share_playlist_story
+🧰 Tool Outputs:
+
+📱 Text Message Mode:
+I made a calm-down playlist if you ever want to try it. It helped my niece last week.
+
+📣 Social Caption Mode:
+Share tools that have helped you or others — even quietly.
+
+🖼️ Printable Mode:
+This playlist is here for any tough moments. Use it however feels right.
+
+📘 Guide Mode:
+✅ SHARE WHAT HELPS
+Sometimes, offering a tool from your world invites peace into theirs.
+
+---
+
+📖 Script ID: offer_to_join_story
+🧰 Tool Outputs:
+
+📱 Text Message Mode:
+Would it help to have someone join you at the appointment? I’d be glad to go.
+
+📣 Social Caption Mode:
+Don’t underestimate how powerful shared presence can be in stressful spaces.
+
+🖼️ Printable Mode:
+I can be there at your side if you’d like. You don’t have to go alone.
+
+📘 Guide Mode:
+✅ OFFER TO JOIN
+Appointments, IEPs, or public outings—support feels different when you’re not alone.
+
+---
+
+📖 Script ID: pre_meltdown_support_story
+🧰 Tool Outputs:
+
+📱 Text Message Mode:
+Need a buffer for the weekend? I can help with one of the errands.
+
+📣 Social Caption Mode:
+Supporters: ask about *before* the meltdown. That’s where magic prevention lives.
+
+🖼️ Printable Mode:
+Let me run an errand for you this weekend. Just name it.
+
+📘 Guide Mode:
+✅ PREVENT THE OVERLOAD
+Offer help ahead of the storm—not just after it.
+
+---
+
+📖 Script ID: child_to_child_note_story
+🧰 Tool Outputs:
+
+📱 Text Message Mode:
+Here’s a little card from our kiddo to yours. Just wanted them to feel seen.
+
+📣 Social Caption Mode:
+Connection between kids can be quiet and beautiful. Facilitate kindness.
+
+🖼️ Printable Mode:
+Just a note from one friend to another. You’re awesome.
+
+📘 Guide Mode:
+✅ INCLUDE THEIR CHILD
+It means the world when you think of the child, not just the parent.
+
+---
+
+📖 Script ID: walk_and_listen_story
+🧰 Tool Outputs:
+
+📱 Text Message Mode:
+Heard your week was intense. Want to walk and vent, or just grab coffee and breathe?
+
+📣 Social Caption Mode:
+Offer space that doesn’t demand a story—just companionship.
+
+🖼️ Printable Mode:
+Let’s walk. Or just sit. I’ve got time and no expectations.
+
+📘 Guide Mode:
+✅ OPEN SPACE FOR PROCESSING
+Sometimes people don’t want advice. They want air and presence.
+
+---
+
+📖 Script ID: sensory_snacks_story
+🧰 Tool Outputs:
+
+📱 Text Message Mode:
+I added a few sensory-friendly snacks to the class basket—figured it might help.
+
+📣 Social Caption Mode:
+Tiny things, like snacks that work for one child, can ripple into inclusion.
+
+🖼️ Printable Mode:
+Just a few snacks that might feel better today. Hope it helps.
+
+📘 Guide Mode:
+✅ MAKE ENVIRONMENTS SAFER
+Little proactive changes show care for the child *and* the system.
+---
+
+📖 Script ID: build_support_kit_script
+🧰 Tool Outputs:
+
+📱 Text Message Mode:
+“Let’s build a small support kit together. You’ll get a few gentle, helpful ways to show up—customized just for what you're trying to do.”
+
+📣 Social Caption Mode:
+Support doesn’t have to be perfect—just real.
+🛠️ Build a little kit of kindness today.
+Start with one goal. End with a few ways to help.
+Because being ready matters.
+
+🖼️ Printable Mode:
+🧰 Be Ausome Support Kit
+What kind of support do you want to offer?
+→ Emotional?
+→ Practical?
+→ Celebration?
+Pick a path. Gather a few tools. You’ve got this.
+
+📘 Guide Mode:
+✅ BUILD A SUPPORT KIT
+Offer the supporter a chance to build their own bundle of helpful tools:
+“Want to build a mini toolkit of ways to show up?”
+They choose the goal, and you offer 3–5 personalized ways to help.
+This empowers them without overwhelm.
+
+
+
+📌 OUTPUT SAFETY REMINDER:
+
+Always include: “Support like yours makes a difference. This is not clinical advice—just ways to show up in real life.”
+
+I don’t store personal details between conversations, and I never share anything with third parties.
+
+
