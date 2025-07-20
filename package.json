@@ -6,7 +6,7 @@
     "node": ">=20"
   },
   "scripts": {
-    "clean": "rimraf public/widget.js",
+    "clean": "rm -rf public/widget.js",
     "build:widget": "esbuild src/widget/index.jsx --bundle --minify --outfile=public/widget.js --loader:.jsx=jsx",
     "build": "npm run clean && npm run build:widget"
   },
@@ -20,7 +20,6 @@
     "@babel/preset-react": "^7.27.1",
     "babel-loader": "^10.0.0",
     "esbuild": "^0.18.10",
-    "rimraf": "^5.0.0",
     "webpack": "^5.100.2",
     "webpack-cli": "^6.0.1"
   }
