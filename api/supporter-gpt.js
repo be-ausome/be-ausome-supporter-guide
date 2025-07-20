@@ -6,17 +6,28 @@ import { fileURLToPath } from "url";
 const __dirname   = path.dirname(fileURLToPath(import.meta.url));
 const CONTENT_DIR = path.join(__dirname, "..", "content");
 
-let routerObj     = {};   // role → rules[]
-let scriptIndex   = {};   // script_id → full block
+// Globals
+let routerObj     = {};    // role → rules[]
+let scriptMeta    = {};    // script_id → { metadata fields + body }
 let contentLoaded = false;
 
-// Simple slugifier (lowercase, non-alphanum → underscore)
+// slugify helper
 function slugify(text) {
   return text
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "_")
     .replace(/^_|_$/g, "");
 }
+
+// Map your delivery_format values to JSON keys
+const formatMap = {
+  text_message:    "text_message",
+  email:           "email",
+  printable_card:  "printable",
+  voice_note:      "voice_note",
+  social_media_post: "social_caption",
+  guide:           "guide"
+};
 
 async function loadContentOnce() {
   if (contentLoaded) return;
@@ -32,65 +43,76 @@ async function loadContentOnce() {
     )
   );
 
-  // 2️⃣ Load script library TXT
-  const txt   = await fs.readFile(
-    path.join(
-      CONTENT_DIR,
-      "supporter_script_library_REAL_CONTENT_v14.txt"
-    ),
-    "utf8"
-  );
-  const lines = txt.split(/\r?\n/);
+  // 2️⃣ Load & parse script library TXT
+  const txtLines = (
+    await fs.readFile(
+      path.join(CONTENT_DIR, "supporter_script_library_REAL_CONTENT_v14.txt"),
+      "utf8"
+    )
+  ).split(/\r?\n/);
 
-  // 3️⃣ Find every '---' marker line
-  const markers = [];
-  lines.forEach((line, i) => {
-    if (line.trim() === "---") markers.push(i);
-  });
+  // Find all '---' markers
+  const markers = txtLines
+    .map((l, i) => (l.trim() === "---" ? i : -1))
+    .filter(i => i >= 0);
 
-  // 4️⃣ Iterate in pairs: [metaStart, metaEnd], content until next marker
+  // Process in pairs: metadata is between markers[i] & markers[i+1]
   for (let i = 0; i < markers.length - 1; i += 2) {
     const metaStart = markers[i];
     const metaEnd   = markers[i+1];
-    const nextMarker = markers[i+2];
+    const next      = markers[i+2] || txtLines.length;
 
-    // Metadata lines between the two markers
-    const metaLines = lines.slice(metaStart + 1, metaEnd);
-    // Content lines until the next marker (or EOF)
-    const contentLines = nextMarker != null
-      ? lines.slice(metaEnd + 1, nextMarker)
-      : lines.slice(metaEnd + 1);
+    const metaLines    = txtLines.slice(metaStart + 1, metaEnd);
+    const bodyLines    = txtLines.slice(metaEnd + 1, next);
+    const meta         = {};
+    let   scriptId     = null;
 
-    // Look for the scenario line in meta
-    const scenarioLine = metaLines.find(l => l.trim().startsWith("scenario:"));
-    if (!scenarioLine) continue;
+    // Parse each metadata line KEY: VALUE
+    metaLines.forEach(line => {
+      const [key, ...rest] = line.split(":");
+      if (!rest.length) return;
+      const val = rest.join(":").trim().replace(/^"(.*)"$/, "$1");
+      meta[key.trim()] = val;
+      if (key.trim() === "script_id") {
+        scriptId = val;
+      }
+    });
 
-    const match = scenarioLine.match(/scenario:\s*"([^"]+)"/);
-    if (!match) continue;
+    // Skip blocks without a real script_id
+    if (!scriptId || scriptId.toLowerCase() === "none") continue;
 
-    const slug = slugify(match[1]);
-    // Combine metadata + content
-    const block = metaLines.concat(contentLines).join("\n").trim();
-    scriptIndex[slug] = block;
+    // Slugify scenario to guard against mismatch
+    if (meta.scenario) {
+      const slug = slugify(meta.scenario);
+      scriptId = slug;
+      meta.script_id   = slug;
+      meta.template_id = slug;
+    }
+
+    // Join metadata + body for completeness
+    scriptMeta[scriptId] = {
+      ...meta,
+      body: bodyLines.filter(l => l.trim()).join("\n")
+    };
   }
 
   contentLoaded = true;
   console.log(
-    `[Supporter-GPT] content loaded → roles:${Object.keys(routerObj).length
-    } | scripts:${Object.keys(scriptIndex).length}`
+    `[Supporter-GPT] Loaded ${Object.keys(routerObj).length} roles & ` +
+    `${Object.keys(scriptMeta).length} scripts`
   );
 }
 
 export default async function handler(req, res) {
   await loadContentOnce();
 
-  // GET health-check
+  // Health-check for GET
   if (req.method !== "POST") {
     return res.status(200).json({
       ok:      true,
       message: "Supporter GPT loader ready",
       roles:   Object.keys(routerObj).length,
-      scripts: Object.keys(scriptIndex).length,
+      scripts: Object.keys(scriptMeta).length
     });
   }
 
@@ -105,45 +127,54 @@ export default async function handler(req, res) {
   }
   const msgLower = message.toLowerCase();
 
-  // 1️⃣ Pick rules to search
-  let rulesToSearch;
-  if (user_role && routerObj[user_role]) {
-    rulesToSearch = routerObj[user_role];
-  } else {
-    rulesToSearch = Object.values(routerObj)
-                          .filter(Array.isArray)
-                          .flat();
-  }
+  // 1️⃣ Pick role-based rules
+  let rules = Array.isArray(routerObj[user_role])
+    ? routerObj[user_role]
+    : Object.values(routerObj)
+        .filter(Array.isArray)
+        .flat();
 
-  // 2️⃣ Naïve keyword find
-  const match = rulesToSearch.find(r => {
+  // 2️⃣ Find a match by keywords
+  const match = rules.find(r => {
     if (!Array.isArray(r.keywords)) return false;
-    try {
-      return new RegExp(r.keywords.join("|"), "i").test(msgLower);
-    } catch {
-      return false;
-    }
+    return new RegExp(r.keywords.join("|"), "i").test(msgLower);
   });
 
-  // 3️⃣ Fallback
+  // 3️⃣ Fallback if nothing matched
   if (!match) {
     return res.status(200).json({
       ok:        true,
       script_id: null,
       output: {
         text_message: "(fallback) Could you rephrase that for me?"
-      }
+      },
+      disclaimer:
+        "This conversation isn’t saved. For your privacy, nothing you share is remembered."
     });
   }
 
-  // 4️⃣ Return full block
-  const { script_id } = match;
-  const raw_block     = scriptIndex[script_id] || "(script not found)";
+  // 4️⃣ We have a match!
+  const { script_id, tone_tags = [], alt_scripts = [] } = match;
+  const info = scriptMeta[script_id] || {};
+
+  // Build the output for the requested delivery_format
+  const key   = formatMap[info.delivery_format] || "text_message";
+  const output = { [key]: info.body };
+
+  // Next steps: human-friendly alt_scripts (limit 3)
+  const next_steps = alt_scripts.slice(0, 3).map(id =>
+    id.replace(/_/g, " ")
+      .replace(/\b\w/g, c => c.toUpperCase())
+  );
 
   return res.status(200).json({
-    ok:          true,
+    ok:         true,
     script_id,
-    raw_block
+    tone:       info.narrator_profile || tone_tags[0] || null,
+    output,
+    next_steps,
+    disclaimer:
+      "This conversation isn’t saved. For your privacy, nothing you share is remembered."
   });
 }
 /* ─── END /api/supporter-gpt.js ─────────────────────────────────────────── */
