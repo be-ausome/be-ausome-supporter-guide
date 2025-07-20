@@ -6,15 +6,14 @@
     "node": ">=20"
   },
   "scripts": {
-    "clean": "rimraf public/widget.js",
+    "clean": "rm -rf public/widget.js",
     "build:widget": "esbuild src/widget/index.jsx --bundle --minify --outfile=public/widget.js --loader:.jsx=jsx",
     "build": "npm run clean && npm run build:widget"
   },
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "esbuild": "^0.18.10",
-    "rimraf": "^5.0.0"
+    "esbuild": "^0.18.10"
   },
   "devDependencies": {
     "@babel/core": "^7.28.0",
