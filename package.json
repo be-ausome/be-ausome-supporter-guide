@@ -6,16 +6,17 @@
     "node": ">=20"
   },
   "scripts": {
-    "clean": "rm -rf public/widget.js",
-    "build:widget": "esbuild src/widget/index.jsx --bundle --minify --outfile=public/widget.js --loader:.jsx=jsx",
-    "build": "npm run clean && npm run build:widget"
+    "clean": "rimraf public/widget.js",
+    "build-widget": "node scripts/build-widget.js",
+    "build": "npm run clean && npm run build-widget"
   },
   "dependencies": {
     "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "esbuild": "^0.18.10"
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
+    "esbuild": "^0.18.10",
+    "rimraf": "^5.0.0",
     "@babel/core": "^7.28.0",
     "@babel/preset-env": "^7.28.0",
     "@babel/preset-react": "^7.27.1",
