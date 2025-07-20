@@ -1,0 +1,52 @@
+openapi: 3.0.1
+info:
+  title: Supporter Guide GPT API
+  version: 1.0.0
+servers:
+  - url: https://be-ausome-supporter-guide.vercel.app
+paths:
+  /api/supporter-gpt:
+    post:
+      summary: Get a tone-matched support script
+      operationId: getSupporterScript
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [message, user_role]
+              properties:
+                message:
+                  type: string
+                  description: The supporter’s message or question
+                user_role:
+                  type: string
+                  description: e.g. "coworker", "friend", "parent", etc.
+                preferred_output:
+                  type: string
+                  description: Override the delivery format
+                  enum: [text_message, social_caption, printable, guide]
+      responses:
+        '200':
+          description: A fully-formatted support response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  ok:
+                    type: boolean
+                  script_id:
+                    type: string
+                  tone:
+                    type: string
+                  output:
+                    type: object
+                    description: Keys are delivery formats (text_message, email, etc.)
+                  next_steps:
+                    type: array
+                    items:
+                      type: string
+                  disclaimer:
+                    type: string
