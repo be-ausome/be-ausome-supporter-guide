@@ -6,9 +6,8 @@
     "node": ">=20"
   },
   "scripts": {
-    "clean": "rimraf public/widget.js",
-    "build-widget": "node scripts/build-widget.js",
-    "build": "npm run clean && npm run build-widget"
+    "build:widget": "build-widget.js",
+    "build": "npm run build:widget"
   },
   "dependencies": {
     "react": "^18.3.1",
@@ -16,7 +15,6 @@
   },
   "devDependencies": {
     "esbuild": "^0.18.10",
-    "rimraf": "^5.0.0",
     "@babel/core": "^7.28.0",
     "@babel/preset-env": "^7.28.0",
     "@babel/preset-react": "^7.27.1",
