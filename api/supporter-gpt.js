@@ -141,7 +141,7 @@ export default async function handler(req, res) {
   const raw_block     = scriptIndex[script_id] || "(script not found)";
 
   return res.status(200).json({
-    ok,
+    ok:          true,
     script_id,
     raw_block
   });
