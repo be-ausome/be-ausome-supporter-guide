@@ -1,4 +1,4 @@
-/* ── /api/supporter-gpt.js — role-aware router + YAML-style block index ── */
+/* ─── START /api/supporter-gpt.js ───────────────────────────────────────── */
 import { promises as fs } from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
@@ -10,11 +10,18 @@ let routerObj     = {};   // role → rules[]
 let scriptIndex   = {};   // script_id → full block
 let contentLoaded = false;
 
-/* ---------- Load content once ---------- */
+// Simple slugifier (lowercase, non-alphanum → underscore)
+function slugify(text) {
+  return text
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "_")
+    .replace(/^_|_$/g, "");
+}
+
 async function loadContentOnce() {
   if (contentLoaded) return;
 
-  /* 1 – router JSON (object keyed by supporter role) */
+  // 1️⃣ Load router JSON
   routerObj = JSON.parse(
     await fs.readFile(
       path.join(
@@ -25,48 +32,69 @@ async function loadContentOnce() {
     )
   );
 
-  /* 2 – TXT script library → build scriptIndex */
-  const txt = await fs.readFile(
+  // 2️⃣ Load script library TXT
+  const txt   = await fs.readFile(
     path.join(
       CONTENT_DIR,
       "supporter_script_library_REAL_CONTENT_v14.txt"
     ),
     "utf8"
   );
+  const lines = txt.split(/\r?\n/);
 
-  // Split on '---' lines (YAML front-matter style)
-  const blocks = txt.split(/^---\s*$/m).filter(b => b.trim());
-  blocks.forEach(block => {
-    // Find the first “script_id:” line
-    const idMatch = block.match(/^\s*script_id:\s*("?)([A-Za-z0-9_\-]+)\1/m);
-    if (!idMatch) return;
-    const id = idMatch[2];
-    if (!id || id.toLowerCase() === "none") return;   // skip placeholder
-    scriptIndex[id] = block.trim();
+  // 3️⃣ Find every '---' marker line
+  const markers = [];
+  lines.forEach((line, i) => {
+    if (line.trim() === "---") markers.push(i);
   });
+
+  // 4️⃣ Iterate in pairs: [metaStart, metaEnd], content until next marker
+  for (let i = 0; i < markers.length - 1; i += 2) {
+    const metaStart = markers[i];
+    const metaEnd   = markers[i+1];
+    const nextMarker = markers[i+2];
+
+    // Metadata lines between the two markers
+    const metaLines = lines.slice(metaStart + 1, metaEnd);
+    // Content lines until the next marker (or EOF)
+    const contentLines = nextMarker != null
+      ? lines.slice(metaEnd + 1, nextMarker)
+      : lines.slice(metaEnd + 1);
+
+    // Look for the scenario line in meta
+    const scenarioLine = metaLines.find(l => l.trim().startsWith("scenario:"));
+    if (!scenarioLine) continue;
+
+    const match = scenarioLine.match(/scenario:\s*"([^"]+)"/);
+    if (!match) continue;
+
+    const slug = slugify(match[1]);
+    // Combine metadata + content
+    const block = metaLines.concat(contentLines).join("\n").trim();
+    scriptIndex[slug] = block;
+  }
 
   contentLoaded = true;
   console.log(
-    `[Supporter-GPT] loaded roles:${Object.keys(routerObj).length
+    `[Supporter-GPT] content loaded → roles:${Object.keys(routerObj).length
     } | scripts:${Object.keys(scriptIndex).length}`
   );
 }
 
-/* ---------- Main handler ---------- */
 export default async function handler(req, res) {
   await loadContentOnce();
 
-  /* Simple GET health-check */
+  // GET health-check
   if (req.method !== "POST") {
     return res.status(200).json({
-      ok: true,
+      ok:      true,
       message: "Supporter GPT loader ready",
       roles:   Object.keys(routerObj).length,
-      scripts: Object.keys(scriptIndex).length
+      scripts: Object.keys(scriptIndex).length,
     });
   }
 
-  /* Parse JSON body (Vercel may give it as string) */
+  // Parse JSON body
   let body = req.body;
   if (typeof body === "string") {
     try { body = JSON.parse(body); } catch { body = {}; }
@@ -77,8 +105,8 @@ export default async function handler(req, res) {
   }
   const msgLower = message.toLowerCase();
 
-  /* 1️⃣ pick rules to search */
-  let rulesToSearch = [];
+  // 1️⃣ Pick rules to search
+  let rulesToSearch;
   if (user_role && routerObj[user_role]) {
     rulesToSearch = routerObj[user_role];
   } else {
@@ -87,9 +115,9 @@ export default async function handler(req, res) {
                           .flat();
   }
 
-  /* 2️⃣ naive keyword match */
+  // 2️⃣ Naïve keyword find
   const match = rulesToSearch.find(r => {
-    if (!Array.isArray(r.keywords) || !r.keywords.length) return false;
+    if (!Array.isArray(r.keywords)) return false;
     try {
       return new RegExp(r.keywords.join("|"), "i").test(msgLower);
     } catch {
@@ -97,18 +125,25 @@ export default async function handler(req, res) {
     }
   });
 
-  /* 3️⃣ fallback if no match */
+  // 3️⃣ Fallback
   if (!match) {
     return res.status(200).json({
-      ok: true,
+      ok:        true,
       script_id: null,
-      output: { text_message: "(fallback) Could you rephrase that for me?" }
+      output: {
+        text_message: "(fallback) Could you rephrase that for me?"
+      }
     });
   }
 
-  /* 4️⃣ return the script block */
+  // 4️⃣ Return full block
   const { script_id } = match;
-  const scriptBlock   = scriptIndex[script_id] || "(script not found)";
+  const raw_block     = scriptIndex[script_id] || "(script not found)";
 
-  return res.status(200).json({ ok: true, script_id, raw_block: scriptBlock });
+  return res.status(200).json({
+    ok,
+    script_id,
+    raw_block
+  });
 }
+/* ─── END /api/supporter-gpt.js ─────────────────────────────────────────── */
