@@ -1,0 +1,304 @@
+{
+  "scenarios": [
+    {
+      "id": "birthday_gift_text",
+      "description": "Sending a message on a child\u2019s birthday",
+      "tags": [
+        "celebrate",
+        "hopeful",
+        "acquaintance",
+        "group_text"
+      ]
+    },
+    {
+      "id": "saw_progress_at_school",
+      "description": "Noticing progress in a student or classmate and wanting to say something",
+      "tags": [
+        "celebrate",
+        "eager",
+        "teacher",
+        "dropoff_line"
+      ]
+    },
+    {
+      "id": "regret_not_speaking_up",
+      "description": "A supporter feels guilty for staying silent during a public meltdown",
+      "tags": [
+        "repair",
+        "guilty",
+        "stranger",
+        "social_event"
+      ]
+    },
+    {
+      "id": "want_to_offer_meal",
+      "description": "Wanting to provide a meal but unsure how to ask or what they need",
+      "tags": [
+        "offer_help",
+        "uncertain",
+        "neighbor",
+        "in_person"
+      ]
+    },
+    {
+      "id": "friend_wants_to_check_in",
+      "description": "Friend wants to reach out after a tough week but doesn\u2019t want to intrude",
+      "tags": [
+        "show_up",
+        "nervous",
+        "close_friend",
+        "text"
+      ]
+    },
+    {
+      "id": "coworker_overhears_convo",
+      "description": "Coworker overhears someone talking about autism and wants to ask a thoughtful question",
+      "tags": [
+        "ask_question",
+        "curious",
+        "coworker",
+        "passing_comment"
+      ]
+    },
+    {
+      "id": "new_volunteer_intro",
+      "description": "A new volunteer is meeting an autistic child for the first time",
+      "tags": [
+        "show_up",
+        "hopeful",
+        "volunteer",
+        "first_introduction"
+      ]
+    },
+    {
+      "id": "faith_leader_celebrates_milestone",
+      "description": "Faith leader wants to honor a child\u2019s milestone in a service",
+      "tags": [
+        "celebrate",
+        "eager",
+        "faith_leader",
+        "public_setting"
+      ]
+    },
+    {
+      "id": "coach_corrects_behavior",
+      "description": "Coach accidentally misreads a behavior and wants to repair the moment",
+      "tags": [
+        "repair",
+        "guilty",
+        "coach",
+        "practice"
+      ]
+    },
+    {
+      "id": "teacher_checkin_email",
+      "description": "Teacher wants to check in via email with a parent after noticing a tough day",
+      "tags": [
+        "show_up",
+        "thoughtful",
+        "teacher",
+        "email"
+      ]
+    },
+    {
+      "id": "neighbor_first_interaction",
+      "description": "Neighbor meets an autistic child for the first time and wants to be kind",
+      "tags": [
+        "show_up",
+        "nervous",
+        "neighbor",
+        "driveway"
+      ]
+    },
+    {
+      "id": "grandparent_misstep",
+      "description": "Grandparent gave unsolicited advice and wants to repair the relationship",
+      "tags": [
+        "repair",
+        "guilty",
+        "close_family",
+        "in_person"
+      ]
+    },
+    {
+      "id": "friend_shares_post",
+      "description": "Friend sees a Be Ausome post and wants to share it with kind words",
+      "tags": [
+        "celebrate",
+        "eager",
+        "friend",
+        "social_media"
+      ]
+    },
+    {
+      "id": "coworker_asks_lunch_question",
+      "description": "Coworker gently asks about autism over a lunch break",
+      "tags": [
+        "ask_question",
+        "curious",
+        "coworker",
+        "casual_setting"
+      ]
+    },
+    {
+      "id": "volunteer_makes_mistake",
+      "description": "Volunteer feels they misunderstood a situation and want to do better",
+      "tags": [
+        "repair",
+        "guilty",
+        "volunteer",
+        "group_activity"
+      ]
+    },
+    {
+      "id": "distant_relative_reconnects",
+      "description": "A distant relative reaches out after hearing about a diagnosis and wants to reconnect.",
+      "tags": [
+        "show_up",
+        "hopeful",
+        "extended_family",
+        "message"
+      ]
+    },
+    {
+      "id": "parent_of_friend_reaches_out",
+      "description": "Parent of a classmate reaches out after a difficult school interaction.",
+      "tags": [
+        "show_up",
+        "thoughtful",
+        "peer_parent",
+        "email"
+      ]
+    },
+    {
+      "id": "coach_wants_to_adjust",
+      "description": "Coach wants help modifying a group activity to include an autistic player better.",
+      "tags": [
+        "offer_help",
+        "eager",
+        "coach",
+        "practice"
+      ]
+    },
+    {
+      "id": "neighbor_wrong_comment",
+      "description": "Neighbor realizes their comment about 'fixing autism' was hurtful and wants to apologize.",
+      "tags": [
+        "repair",
+        "guilty",
+        "neighbor",
+        "passing_comment"
+      ]
+    },
+    {
+      "id": "sibling_shares_milestone",
+      "description": "Sibling of an autistic child shares a win or milestone with their friend.",
+      "tags": [
+        "celebrate",
+        "proud",
+        "sibling",
+        "casual_setting"
+      ]
+    },
+    {
+      "id": "friend_invites_inclusively",
+      "description": "Friend invites the whole family to a gathering and wants it to feel safe.",
+      "tags": [
+        "offer_help",
+        "hopeful",
+        "friend",
+        "social_event"
+      ]
+    },
+    {
+      "id": "teacher_wants_clarity",
+      "description": "Teacher is unsure if a new behavior is sensory or defiance and wants to learn.",
+      "tags": [
+        "ask_question",
+        "curious",
+        "teacher",
+        "classroom"
+      ]
+    },
+    {
+      "id": "volunteer_supports_during_transition",
+      "description": "Volunteer helps during a loud, chaotic transition and wants affirmation.",
+      "tags": [
+        "celebrate",
+        "nervous",
+        "volunteer",
+        "group_activity"
+      ]
+    },
+    {
+      "id": "boss_misreads_behavior",
+      "description": "Manager misinterprets a behavior at work and wants to learn more.",
+      "tags": [
+        "ask_question",
+        "guilty",
+        "employer",
+        "workplace"
+      ]
+    },
+    {
+      "id": "coworker_wants_to_invite_child",
+      "description": "Coworker wants to invite a colleague\u2019s child to an event and isn\u2019t sure how.",
+      "tags": [
+        "offer_help",
+        "uncertain",
+        "coworker",
+        "group_invite"
+      ]
+    },
+    {
+      "id": "pastor_needs_guidance",
+      "description": "Faith leader wants to know how to make a service more accessible.",
+      "tags": [
+        "ask_question",
+        "hopeful",
+        "faith_leader",
+        "public_setting"
+      ]
+    },
+    {
+      "id": "new_friend_confused_by_reaction",
+      "description": "New friend was confused by a child\u2019s reaction and wants help understanding.",
+      "tags": [
+        "ask_question",
+        "nervous",
+        "friend",
+        "casual_setting"
+      ]
+    },
+    {
+      "id": "teacher_wants_to_thank_sibling",
+      "description": "Teacher noticed a sibling helping and wants to thank them meaningfully.",
+      "tags": [
+        "celebrate",
+        "validating",
+        "teacher",
+        "school_event"
+      ]
+    },
+    {
+      "id": "therapist_seeks_parent_feedback",
+      "description": "Therapist wants to ask about family dynamics but isn\u2019t sure how.",
+      "tags": [
+        "ask_question",
+        "thoughtful",
+        "therapist",
+        "email"
+      ]
+    },
+    {
+      "id": "community_member_wants_to_post_support",
+      "description": "A community member saw a tough moment in public and wants to share a kind post.",
+      "tags": [
+        "show_up",
+        "eager",
+        "stranger",
+        "social_media"
+      ]
+    }
+  ]
+}

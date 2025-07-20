@@ -1,0 +1,260 @@
+---
+trigger_emotion: Guilt
+context: Parent feels bad about not doing enough or missing something important.
+keywords: forgot, should have, let them down, not enough
+recommended_tone: validation_first
+recommended_script_id: validation_reset
+micro_mission: Reframe guilt with empathy and permission to be human
+---
+
+---
+trigger_emotion: Silence
+context: Parent gives no reply or only sends an emoji.
+keywords: ... 🙃 🤷‍♀️
+recommended_tone: soft_checkin
+recommended_script_id: soft_checkin
+micro_mission: Invite gentle reentry without pressure
+---
+
+---
+trigger_emotion: Shutdown
+context: Parent signals disengagement or apathy.
+keywords: whatever, fine, nevermind
+recommended_tone: empathy_reset
+recommended_script_id: empathy_reset
+micro_mission: Name the shutdown and gently offer space or safety
+---
+
+---
+trigger_emotion: Hypervigilance
+context: Parent is scanning for danger or overloads fast.
+keywords: what if, always happens, they'll freak out
+recommended_tone: calm_grounding
+recommended_script_id: gentle_reset
+micro_mission: Help regulate nervous system tone
+---
+
+---
+trigger_emotion: Anger at Tools
+context: Parent feels bot/tools are useless or frustrating.
+keywords: this doesn't help, stupid idea, tried that
+recommended_tone: soft_accountability
+recommended_script_id: when_it_goes_wrong
+micro_mission: Normalize the anger and offer an exit or redirection
+---
+
+---
+trigger_emotion: Hope Collapse
+context: Parent says they’re giving up or it doesn’t matter anymore.
+keywords: why bother, nothing works, done trying
+recommended_tone: gently_supportive
+recommended_script_id: gentle_repair_12
+micro_mission: Offer warmth and model small next step
+---
+
+---
+trigger_emotion: Joy Surprise
+context: Parent is shocked something good happened.
+keywords: omg, can't believe it, wow, that worked
+recommended_tone: affirmation
+recommended_script_id: celebrating_progress
+micro_mission: Reinforce progress and validate agency
+---
+
+---
+trigger_emotion: Trigger Misfire
+context: Bot said something that landed wrong emotionally.
+keywords: what?, not okay, that hurt
+recommended_tone: repair_and_reset
+recommended_script_id: gentle_repair_02
+micro_mission: Acknowledge misfire and ask for direction
+---
+
+---
+trigger_emotion: Panic
+context: Parent is in acute stress mode.
+keywords: can't breathe, spiraling, help now
+recommended_tone: crisis_soften
+recommended_script_id: meltdown_support
+micro_mission: Create instant calm and safety frame
+---
+
+---
+trigger_emotion: Bittersweet Memory
+context: Parent recalls progress but also pain.
+keywords: remember when, used to be, back then
+recommended_tone: reflective
+recommended_script_id: soft_checkin
+micro_mission: Hold memory gently and shift to now
+---
+
+---
+trigger_emotion: Dismissive Defense
+context: Parent shuts down suggestions with sarcasm or deflection.
+keywords: sure, whatever you say, yeah right
+recommended_tone: gently_supportive
+recommended_script_id: awkward_start
+micro_mission: Disarm defensiveness with tone repair
+---
+
+---
+trigger_emotion: Sensory Spike
+context: Parent is overstimulated (sound, lights, texture).
+keywords: can't think, too loud, overload
+recommended_tone: minimal
+recommended_script_id: soft_checkin
+micro_mission: Reduce input and slow language pacing
+---
+
+---
+trigger_emotion: Comparison Guilt
+context: Parent compares self to others and feels inadequate.
+keywords: other parents, better than me, why can't I
+recommended_tone: gentle validation
+recommended_script_id: validation_reset
+micro_mission: Undo comparison loop with self-kindness
+---
+
+---
+trigger_emotion: Celebration Freeze
+context: Parent can't accept positive reflection or praise.
+keywords: not me, just lucky, wasn’t that big
+recommended_tone: gentle affirmation
+recommended_script_id: celebrating_progress
+micro_mission: Let praise land slowly without pressure
+---
+
+---
+trigger_emotion: Grief (Anniversary)
+context: Anniversary or memory of painful loss surfaces.
+keywords: this day, always hard, every year
+recommended_tone: soft_hold
+recommended_script_id: soft_checkin
+micro_mission: Hold grief softly without fixing
+---
+
+---
+trigger_emotion: Emotional Exhaustion
+context: Parent feels drained beyond words.
+keywords: tired, done, can't feel anymore
+recommended_tone: gentle silence
+recommended_script_id: gentle_reset
+micro_mission: Provide space with minimal emotional load
+---
+
+---
+trigger_emotion: Shame Spiral
+context: Multiple failures feel stacked and paralyzing.
+keywords: again, keep messing up, always my fault
+recommended_tone: deep validation
+recommended_script_id: validation_reset
+micro_mission: Interrupt spiral and name resilience
+---
+
+---
+trigger_emotion: Fear of Judgement
+context: Parent fears being criticized or misunderstood.
+keywords: they'll think, don't tell anyone, they'll judge me
+recommended_tone: confidential tone
+recommended_script_id: soft_checkin
+micro_mission: Affirm safety and emotional confidentiality
+---
+
+---
+trigger_emotion: Disconnected
+context: Parent feels numb or like they’re not present.
+keywords: zoned out, can't connect, don't feel here
+recommended_tone: gently_present
+recommended_script_id: soft_checkin
+micro_mission: Invite awareness back to now without urgency
+---
+
+---
+trigger_emotion: Recovery Moment
+context: Parent returns after a long absence or breakdown.
+keywords: back again, sorry I left, missed this
+recommended_tone: gentle welcome
+recommended_script_id: soft_checkin
+micro_mission: Affirm reentry and model non-judgment
+---
+
+---
+trigger_emotion: Boundary Collapse
+context: Parent feels like they can’t say no to anyone.
+keywords: can't say no, always doing, everyone's needs
+recommended_tone: boundaried empathy
+recommended_script_id: validation_reset
+micro_mission: Rebuild self-agency and permission
+---
+
+---
+trigger_emotion: Stuck in Loop
+context: Parent keeps repeating same cycle or thought spiral.
+keywords: again, same problem, always ends up here
+recommended_tone: interrupt_then_repair
+recommended_script_id: gentle_repair_08
+micro_mission: Name the loop and offer tone shift
+---
+
+---
+trigger_emotion: Over-Advice Collapse
+context: Parent has heard too many tips and feels flooded.
+keywords: everyone says, too much advice, stop telling me
+recommended_tone: tone_pause
+recommended_script_id: gentle_reset
+micro_mission: Reduce input and restore autonomy
+---
+
+---
+trigger_emotion: Self-Advocacy Crash
+context: Parent tried to speak up and it backfired.
+keywords: I asked and they ignored, wasn't heard
+recommended_tone: solidarity
+recommended_script_id: empathy_reset
+micro_mission: Affirm voice and restore power
+---
+
+---
+trigger_emotion: Mistrust
+context: Parent doubts if this tool is really for them.
+keywords: not sure, is this safe, who's behind this
+recommended_tone: transparency
+recommended_script_id: bot_persona
+micro_mission: Affirm privacy and honest limits
+---
+
+---
+trigger_emotion: Conflict Fallout
+context: Parent just had a fight and feels shaken.
+keywords: they yelled, I lost it, argument
+recommended_tone: gently_anchored
+recommended_script_id: gentle_repair_04
+micro_mission: Help stabilize and reflect safely
+---
+
+---
+trigger_emotion: Unexpected Help
+context: Parent receives help and is emotionally flooded.
+keywords: they actually helped, surprised, overwhelmed by care
+recommended_tone: warm gratitude
+recommended_script_id: celebrating_progress
+micro_mission: Anchor the help and make it feel safe to receive
+---
+
+---
+trigger_emotion: Rejection Trigger
+context: Parent hears no or feels rejected by others.
+keywords: they said no, wasn't picked, not welcome
+recommended_tone: self-worth reframe
+recommended_script_id: validation_reset
+micro_mission: Rebuild dignity and connection
+---
+
+---
+trigger_emotion: Cringe Reaction
+context: Parent pulls back from bot’s phrasing or tone.
+keywords: weird thing to say, that’s awkward, uhh
+recommended_tone: reset_humor
+recommended_script_id: awkward_start
+micro_mission: Diffuse cringe with soft restart
+---

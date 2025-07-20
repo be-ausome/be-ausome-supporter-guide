@@ -1,0 +1,548 @@
+
+[
+  {
+    "scenario_tag": "Overwhelmed Parent",
+    "role_profile": "Close Friend",
+    "emotional_intensity": "High",
+    "tone_recommendation": "Gentle Encourager",
+    "fallback_tone": "Calm Companion",
+    "modulation_note": "If signs of shutdown appear, pause support and offer physical presence instead of advice.",
+    "script_id": "script_001"
+  },
+  {
+    "scenario_tag": "Strained Relationship",
+    "role_profile": "Estranged Relative",
+    "emotional_intensity": "Medium",
+    "tone_recommendation": "Bridge Builder",
+    "fallback_tone": "Gentle Listener",
+    "modulation_note": "If emotion spikes, shift to 'Gentle Listener' and mirror their language without defense.",
+    "script_id": "script_029"
+  },
+  {
+    "scenario_tag": "Diagnosis Shock",
+    "role_profile": "Faith Leader",
+    "emotional_intensity": "High",
+    "tone_recommendation": "Calm Companion",
+    "fallback_tone": "Gentle Encourager",
+    "modulation_note": "Use pauses and spiritual grounding if overwhelm is visible; avoid platitudes.",
+    "script_id": "script_002"
+  },
+  {
+    "scenario_tag": "Sibling Stress",
+    "role_profile": "Grandparent",
+    "emotional_intensity": "Low",
+    "tone_recommendation": "Cheerful Supporter",
+    "fallback_tone": "Gentle Encourager",
+    "modulation_note": "If cheer feels mismatched, shift to 'Calm Companion' and listen first.",
+    "script_id": "apex_script_036"
+  },
+  {
+    "scenario_tag": "Public Meltdown",
+    "role_profile": "Teacher",
+    "emotional_intensity": "High",
+    "tone_recommendation": "Grounded Ally",
+    "fallback_tone": "Calm Companion",
+    "modulation_note": "If parent seems defensive, reduce authority tone and increase warmth.",
+    "script_id": "script_001"
+  },
+  {
+    "scenario_tag": "Crisis Moment",
+    "role_profile": "Boss or Manager",
+    "emotional_intensity": "High",
+    "tone_recommendation": "Grounded Ally",
+    "fallback_tone": "Bridge Builder",
+    "modulation_note": "Lower urgency tone, increase flexibility offers, and acknowledge life complexity.",
+    "script_id": "script_030"
+  },
+  {
+    "scenario_tag": "Trying to Help, Not Sure How",
+    "role_profile": "Online Ally",
+    "emotional_intensity": "Medium",
+    "tone_recommendation": "Cheerful Supporter",
+    "fallback_tone": "Gentle Listener",
+    "modulation_note": "If post is ignored or rejected, back off and shift into silent allyship or DM support.",
+    "script_id": "script_005"
+  },
+  {
+    "scenario_tag": "Big Milestone",
+    "role_profile": "Neighbor",
+    "emotional_intensity": "Low",
+    "tone_recommendation": "Cheerful Supporter",
+    "fallback_tone": "Gentle Encourager",
+    "modulation_note": "Match celebratory tone but avoid clich\u00e9s; personalize with what they\u2019ve overcome.",
+    "script_id": "script_010"
+  },
+  {
+    "scenario_tag": "School Stress",
+    "role_profile": "Coach or Youth Leader",
+    "emotional_intensity": "Medium",
+    "tone_recommendation": "Gentle Encourager",
+    "fallback_tone": "Grounded Ally",
+    "modulation_note": "Normalize setbacks without minimizing effort; focus on long game.",
+    "script_id": "script_004"
+  },
+  {
+    "scenario_tag": "Isolation and Loneliness",
+    "role_profile": "Faith Leader",
+    "emotional_intensity": "High",
+    "tone_recommendation": "Calm Companion",
+    "fallback_tone": "Bridge Builder",
+    "modulation_note": "Use spiritual connection if appropriate, but center their experience, not the church\u2019s.",
+    "script_id": "script_015"
+  },
+  {
+    "scenario_tag": "Medical Confusion",
+    "role_profile": "Medical Specialist",
+    "emotional_intensity": "Medium",
+    "tone_recommendation": "Grounded Ally",
+    "fallback_tone": "Bridge Builder",
+    "modulation_note": "If overwhelmed, simplify language and drop into 'Gentle Encourager'.",
+    "script_id": "script_007"
+  },
+  {
+    "scenario_tag": "Behavior Misunderstood",
+    "role_profile": "School Admin",
+    "emotional_intensity": "High",
+    "tone_recommendation": "Grounded Ally",
+    "fallback_tone": "Gentle Listener",
+    "modulation_note": "Avoid policy-speak; shift tone to 'Gentle Listener' if defensiveness appears.",
+    "script_id": "script_029"
+  },
+  {
+    "scenario_tag": "Awkward First Offer",
+    "role_profile": "Distant Cousin",
+    "emotional_intensity": "Low",
+    "tone_recommendation": "Bridge Builder",
+    "fallback_tone": "Cheerful Supporter",
+    "modulation_note": "Lead with personal warmth; soften quickly if support is declined.",
+    "script_id": "script_023"
+  },
+  {
+    "scenario_tag": "Tense Co-Parenting",
+    "role_profile": "Ex-Partner",
+    "emotional_intensity": "High",
+    "tone_recommendation": "Bridge Builder",
+    "fallback_tone": "Grounded Ally",
+    "modulation_note": "If conflict spikes, shift to solution tone; validate child\u2019s needs first.",
+    "script_id": "script_001"
+  },
+  {
+    "scenario_tag": "Asking for Time Off",
+    "role_profile": "Boss or Manager",
+    "emotional_intensity": "Medium",
+    "tone_recommendation": "Grounded Ally",
+    "fallback_tone": "Calm Companion",
+    "modulation_note": "If employee shows emotion, lower directive tone and increase flexibility framing.",
+    "script_id": "script_023"
+  },
+  {
+    "scenario_tag": "Lack of Progress",
+    "role_profile": "Therapist or Provider",
+    "emotional_intensity": "Medium",
+    "tone_recommendation": "Calm Companion",
+    "fallback_tone": "Gentle Listener",
+    "modulation_note": "If parent is disheartened, slow pace and reflect small wins.",
+    "script_id": "script_005"
+  },
+  {
+    "scenario_tag": "Birthday or Holiday",
+    "role_profile": "Friend",
+    "emotional_intensity": "Low",
+    "tone_recommendation": "Cheerful Supporter",
+    "fallback_tone": "Gentle Encourager",
+    "modulation_note": "If child resists celebration, pull back and shift to quiet, affirming tone.",
+    "script_id": "script_020"
+  },
+  {
+    "scenario_tag": "Church Event",
+    "role_profile": "Faith Leader",
+    "emotional_intensity": "Medium",
+    "tone_recommendation": "Bridge Builder",
+    "fallback_tone": "Calm Companion",
+    "modulation_note": "If the family seems hesitant, remove any pressure and let them opt into support.",
+    "script_id": "script_022"
+  },
+  {
+    "scenario_tag": "Shifting Schedules",
+    "role_profile": "Babysitter or Helper",
+    "emotional_intensity": "Low",
+    "tone_recommendation": "Cheerful Supporter",
+    "fallback_tone": "Grounded Ally",
+    "modulation_note": "If tension rises, add routine-based reassurance and return to 'Gentle Encourager'.",
+    "script_id": "script_009"
+  },
+  {
+    "scenario_tag": "Social Exclusion",
+    "role_profile": "Coach or Youth Leader",
+    "emotional_intensity": "High",
+    "tone_recommendation": "Bridge Builder",
+    "fallback_tone": "Gentle Listener",
+    "modulation_note": "Avoid blame or fix-it tone; prioritize dignity and connection repair.",
+    "script_id": "script_006"
+  },
+  {
+    "scenario_tag": "Late-Night Message",
+    "role_profile": "Sibling",
+    "emotional_intensity": "High",
+    "tone_recommendation": "Gentle Listener",
+    "fallback_tone": "Calm Companion",
+    "modulation_note": "Don\u2019t try to fix; just be present and respond in emotional sync.",
+    "script_id": "script_017"
+  },
+  {
+    "scenario_tag": "Feeling Judged",
+    "role_profile": "In-Law",
+    "emotional_intensity": "High",
+    "tone_recommendation": "Bridge Builder",
+    "fallback_tone": "Gentle Listener",
+    "modulation_note": "If defensiveness is sensed, soften voice and validate lived reality without rebuttal.",
+    "script_id": "script_003"
+  },
+  {
+    "scenario_tag": "Surprise Visit",
+    "role_profile": "Neighbor",
+    "emotional_intensity": "Medium",
+    "tone_recommendation": "Gentle Encourager",
+    "fallback_tone": "Cheerful Supporter",
+    "modulation_note": "Back off if unwelcome; offer a quick gesture and exit gracefully.",
+    "script_id": "apex_script_047"
+  },
+  {
+    "scenario_tag": "Hard Therapy Update",
+    "role_profile": "Medical Specialist",
+    "emotional_intensity": "High",
+    "tone_recommendation": "Calm Companion",
+    "fallback_tone": "Grounded Ally",
+    "modulation_note": "Slow tone, mirror grief, then anchor in shared next steps.",
+    "script_id": "script_004"
+  },
+  {
+    "scenario_tag": "Community Event Invite",
+    "role_profile": "Online Ally",
+    "emotional_intensity": "Low",
+    "tone_recommendation": "Cheerful Supporter",
+    "fallback_tone": "Gentle Encourager",
+    "modulation_note": "Frame the invite gently and offer a low-pressure opt-out path.",
+    "script_id": "script_018"
+  },
+  {
+    "scenario_tag": "Financial Strain",
+    "role_profile": "Grandparent",
+    "emotional_intensity": "High",
+    "tone_recommendation": "Grounded Ally",
+    "fallback_tone": "Calm Companion",
+    "modulation_note": "Offer help quietly; let dignity lead. If refused, shift into ongoing practical presence.",
+    "script_id": "script_004"
+  },
+  {
+    "template_id": "aggressive_behavior_home",
+    "script_id": "script_099"
+  },
+  {
+    "template_id": "airport_security_meltdown",
+    "script_id": "script_093"
+  },
+  {
+    "template_id": "apex_script_031",
+    "script_id": "apex_script_031"
+  },
+  {
+    "template_id": "apex_script_032",
+    "script_id": "apex_script_032"
+  },
+  {
+    "template_id": "apex_script_033",
+    "script_id": "apex_script_033"
+  },
+  {
+    "template_id": "apex_script_034",
+    "script_id": "apex_script_034"
+  },
+  {
+    "template_id": "apex_script_035",
+    "script_id": "apex_script_035"
+  },
+  {
+    "template_id": "apex_script_036",
+    "script_id": "apex_script_036"
+  },
+  {
+    "template_id": "apex_script_037",
+    "script_id": "apex_script_037"
+  },
+  {
+    "template_id": "apex_script_038",
+    "script_id": "apex_script_038"
+  },
+  {
+    "template_id": "apex_script_039",
+    "script_id": "apex_script_039"
+  },
+  {
+    "template_id": "apex_script_040",
+    "script_id": "apex_script_040"
+  },
+  {
+    "template_id": "apex_script_041",
+    "script_id": "apex_script_041"
+  },
+  {
+    "template_id": "apex_script_042",
+    "script_id": "apex_script_042"
+  },
+  {
+    "template_id": "apex_script_043",
+    "script_id": "apex_script_043"
+  },
+  {
+    "template_id": "apex_script_044",
+    "script_id": "apex_script_044"
+  },
+  {
+    "template_id": "apex_script_045",
+    "script_id": "apex_script_045"
+  },
+  {
+    "template_id": "apex_script_046",
+    "script_id": "apex_script_046"
+  },
+  {
+    "template_id": "apex_script_047",
+    "script_id": "apex_script_047"
+  },
+  {
+    "template_id": "apex_script_048",
+    "script_id": "apex_script_048"
+  },
+  {
+    "template_id": "apex_script_049",
+    "script_id": "apex_script_049"
+  },
+  {
+    "template_id": "apex_script_050",
+    "script_id": "apex_script_050"
+  },
+  {
+    "template_id": "babysitter_handling_sensory_overload_while_helping",
+    "script_id": "script_012"
+  },
+  {
+    "template_id": "boss_responds_to_unexpected_time_off_request",
+    "script_id": "script_028"
+  },
+  {
+    "template_id": "child_s_birthday_feels_emotionally_complex",
+    "script_id": "script_020"
+  },
+  {
+    "template_id": "co_parent_conflict_around_routine_consistency",
+    "script_id": "script_015"
+  },
+  {
+    "template_id": "coach_noticing_child_excluded_during_practice",
+    "script_id": "script_006"
+  },
+  {
+    "template_id": "community_leader_planning_an_inclusive_event",
+    "script_id": "script_018"
+  },
+  {
+    "template_id": "crisis_moment_after_elopement_scare",
+    "script_id": "script_030"
+  },
+  {
+    "template_id": "diagnosis_shock_just_found_out",
+    "script_id": "script_002"
+  },
+  {
+    "template_id": "faith_leader_offering_help_without_pressure",
+    "script_id": "script_005"
+  },
+  {
+    "template_id": "financial_stress_around_therapy_costs",
+    "script_id": "script_004"
+  },
+  {
+    "template_id": "fire_drill_overload",
+    "script_id": "script_097"
+  },
+  {
+    "template_id": "food_allergy_reaction",
+    "script_id": "script_098"
+  },
+  {
+    "template_id": "friend_bringing_meal_after_a_rough_week",
+    "script_id": "script_019"
+  },
+  {
+    "template_id": "friend_unsure_whether_to_invite_family_out",
+    "script_id": "script_024"
+  },
+  {
+    "template_id": "friend_wants_to_celebrate_a_quiet_milestone",
+    "script_id": "script_010"
+  },
+  {
+    "template_id": "grandparent_offers_to_help_but_feels_rejected",
+    "script_id": "script_027"
+  },
+  {
+    "template_id": "late_night_message_after_a_hard_day",
+    "script_id": "script_017"
+  },
+  {
+    "template_id": "lost_child_in_crowd",
+    "script_id": "script_094"
+  },
+  {
+    "template_id": "medical_emergency_er_visit",
+    "script_id": "script_091"
+  },
+  {
+    "template_id": "neighbor_wants_to_help_but_doesn_t_know_how",
+    "script_id": "script_008"
+  },
+  {
+    "template_id": "older_sibling_worrying_about_future",
+    "script_id": "script_025"
+  },
+  {
+    "template_id": "online_ally_reacting_to_vulnerable_social_post",
+    "script_id": "script_016"
+  },
+  {
+    "template_id": "overwhelmed_parent_after_public_meltdown",
+    "script_id": "script_001"
+  },
+  {
+    "template_id": "parent_can_t_attend_school_event_due_to_burnout",
+    "script_id": "script_026"
+  },
+  {
+    "template_id": "parent_hospitalized_support",
+    "script_id": "script_100"
+  },
+  {
+    "template_id": "parent_receiving_hard_iep_feedback",
+    "script_id": "script_014"
+  },
+  {
+    "template_id": "police_interaction_public_space",
+    "script_id": "script_092"
+  },
+  {
+    "template_id": "school_lockdown_notification",
+    "script_id": "script_095"
+  },
+  {
+    "template_id": "sibling_feeling_left_out_during_therapy_focus",
+    "script_id": "script_003"
+  },
+  {
+    "template_id": "siblings_fighting_about_autism_related_routines",
+    "script_id": "script_009"
+  },
+  {
+    "template_id": "strained_relationship_after_a_misunderstood_comment",
+    "script_id": "script_029"
+  },
+  {
+    "template_id": "teacher_confused_by_behavior_during_class",
+    "script_id": "script_007"
+  },
+  {
+    "template_id": "therapist_reporting_no_progress_to_a_tired_parent",
+    "script_id": "script_011"
+  },
+  {
+    "template_id": "therapy_cancellation_throws_off_whole_day",
+    "script_id": "script_021"
+  },
+  {
+    "template_id": "travel_cancellation_stress",
+    "script_id": "script_096"
+  },
+  {
+    "template_id": "unasked_for_advice_from_a_stranger",
+    "script_id": "script_023"
+  },
+  {
+    "template_id": "unfamiliar_relative_attending_holiday_gathering",
+    "script_id": "script_013"
+  },
+  {
+    "template_id": "volunteer_at_church_wants_to_be_inclusive",
+    "script_id": "script_022"
+  },
+{
+  "script_id": "meltdown_support",
+  "template_id": "meltdown_support_prompt",
+  "scenario_tag": "Meltdown Recovery",
+  "role_profile": "System Support",
+  "emotional_intensity": "High",
+  "tone_recommendation": "Gently Supportive",
+  "fallback_tone": "Gently Supportive",
+  "modulation_note": "Used during or after a high-stress or meltdown moment to soften the response and re-center support."
+},
+{
+  "script_id": "soft_checkin",
+  "template_id": "soft_checkin_prompt",
+  "scenario_tag": "Emotional Check-In",
+  "role_profile": "System Support",
+  "emotional_intensity": "Low",
+  "tone_recommendation": "Gently Supportive",
+  "fallback_tone": "Gently Supportive",
+  "modulation_note": "Used to invite the user to reflect, pause, or share in a low-pressure way."
+},
+{
+  "script_id": "birthday_support",
+  "template_id": "birthday_support_prompt",
+  "scenario_tag": "Celebration Prompt",
+  "role_profile": "Uplift + Affirmation",
+  "emotional_intensity": "Moderate",
+  "tone_recommendation": "Warm",
+  "fallback_tone": "Gently Supportive",
+  "modulation_note": "Used around birthday contexts to affirm progress or pause for celebration."
+},
+{
+  "script_id": "celebrating_progress",
+  "template_id": "celebrating_progress_prompt",
+  "scenario_tag": "Progress Acknowledgment",
+  "role_profile": "Affirming Voice",
+  "emotional_intensity": "Low",
+  "tone_recommendation": "Encouraging",
+  "fallback_tone": "Gently Supportive",
+  "modulation_note": "Used to help a user see and name progress they might overlook."
+},
+{
+  "script_id": "validation_reset",
+  "template_id": "validation_reset_prompt",
+  "scenario_tag": "Tone Repair",
+  "role_profile": "System Reset",
+  "emotional_intensity": "Low",
+  "tone_recommendation": "Gently Supportive",
+  "fallback_tone": "Gently Supportive",
+  "modulation_note": "Used after a suggestion or tone mismatch to validate and reset direction."
+},
+{
+  "script_id": "asking_questions",
+  "template_id": "asking_questions_prompt",
+  "scenario_tag": "Inquiry Reframe",
+  "role_profile": "Soft Reorientation",
+  "emotional_intensity": "Low",
+  "tone_recommendation": "Calm",
+  "fallback_tone": "Gently Supportive",
+  "modulation_note": "Used to ease back into conversation after confusion or awkwardness around a question."
+},
+{
+  "script_id": "awkward_start",
+  "template_id": "awkward_start_prompt",
+  "scenario_tag": "Start Over",
+  "role_profile": "First Impression Repair",
+  "emotional_intensity": "Low",
+  "tone_recommendation": "Gentle Humor",
+  "fallback_tone": "Gently Supportive",
+  "modulation_note": "Used when the conversation began in a mismatched or offbeat way — gently reorients."
+}
+
+]

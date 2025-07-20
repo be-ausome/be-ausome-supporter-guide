@@ -1,0 +1,800 @@
+{
+  "metadata": {
+    "version": "3.0",
+    "title": "Supporter Guide GPT Knowledge Base",
+    "description": "Expanded emotional intelligence and routing knowledge base for Be Ausome's Supporter Guide Bot.",
+    "last_updated": "2025-07-12",
+    "author": "Be Ausome Project",
+    "related_files": [
+      "supporter_script_library_ALL_30_FINAL_VERIFIED.txt",
+      "supporter_prompt_router_INTERSTELLAR_FINAL_REAL_SCENARIOS.json",
+      "supporter_role_profiles.txt",
+      "tone_persona_cheat_sheet.txt",
+      "supporter_fallback_scripts_INTERSTELLAR_FINAL_14.txt"
+    ]
+  },
+  "scripts": {},
+  "tool_outputs": {
+    "text_message": {
+      "description": "Short, warm messages ideal for low-pressure support moments like check-ins or reminders.",
+      "ideal_for": [
+        "gentle check-ins",
+        "silent support",
+        "follow-up after hard moments"
+      ],
+      "example": "Hey, just thinking of you. No pressure to reply \u2014 sending care."
+    },
+    "printable_card": {
+      "description": "A short phrase on an image or printable note that can be shared in person or digitally.",
+      "ideal_for": [
+        "meaningful gestures",
+        "gifts",
+        "emotional encouragement"
+      ],
+      "example": "You are not alone. And you don\u2019t have to do it all yourself."
+    },
+    "voice_note": {
+      "description": "Audio-based messages that allow emotion to come through tone of voice.",
+      "ideal_for": [
+        "emotional empathy",
+        "support after intense events"
+      ],
+      "example": "Just wanted you to hear a real voice saying: you\u2019re doing an amazing job."
+    },
+    "script_selector": {
+      "description": "A tool to help the supporter pick the right type of message for their situation.",
+      "ideal_for": [
+        "new supporters",
+        "unsure what to say",
+        "high-anxiety moments"
+      ],
+      "example": "Would you like to offer help, send encouragement, or check in?"
+    }
+  },
+  "prompt_directory": {
+    "help_after_meltdown": {
+      "script": "meltdown_support",
+      "tone_profile": "Calm Companion",
+      "tools": [
+        "voice_note",
+        "text_message"
+      ]
+    },
+    "awkward_checkin": {
+      "script": "awkward_start",
+      "tone_profile": "Grounded Ally",
+      "tools": [
+        "text_message"
+      ]
+    },
+    "offering_meals": {
+      "script": "offering_help",
+      "tone_profile": "Gentle Listener",
+      "tools": [
+        "text_message",
+        "printable_card"
+      ]
+    },
+    "holiday_repair": {
+      "script": "reconnect_after_tension",
+      "tone_profile": "Bridge Builder",
+      "tools": [
+        "printable_card",
+        "text_message"
+      ]
+    },
+    "birthday_invite_support": {
+      "script": "inclusive_event_offer",
+      "tone_profile": "Curious Companion",
+      "tools": [
+        "text_message"
+      ]
+    },
+    "after_bullying": {
+      "script": "acknowledge_bullying_support",
+      "tone_profile": "Calm Companion",
+      "tools": [
+        "voice_note",
+        "text_message"
+      ]
+    },
+    "silent_support": {
+      "script": "quiet_gesture",
+      "tone_profile": "Gentle Listener",
+      "tools": [
+        "printable_card"
+      ]
+    },
+    "school_event_tension": {
+      "script": "checkin_after_public_event",
+      "tone_profile": "Grounded Ally",
+      "tools": [
+        "text_message"
+      ]
+    },
+    "early_support_offer": {
+      "script": "how_can_i_help",
+      "tone_profile": "Gentle Listener",
+      "tools": [
+        "text_message",
+        "script_selector"
+      ]
+    },
+    "reaching_out_late": {
+      "script": "repair_after_delay",
+      "tone_profile": "Bridge Builder",
+      "tools": [
+        "text_message",
+        "voice_note"
+      ]
+    },
+    "not_sure_if_you_should_help": {
+      "script": "permission_to_offer_support",
+      "tone_profile": "Grounded Ally",
+      "tools": [
+        "text_message"
+      ]
+    },
+    "wanting_to_reconnect": {
+      "script": "reconnect_soft_opening",
+      "tone_profile": "Bridge Builder",
+      "tools": [
+        "text_message",
+        "printable_card"
+      ]
+    },
+    "help_after_diagnosis": {
+      "script": "diagnosis_day_checkin",
+      "tone_profile": "Gentle Listener",
+      "tools": [
+        "text_message"
+      ]
+    },
+    "checking_in_after_event": {
+      "script": "after_event_checkin",
+      "tone_profile": "Grounded Ally",
+      "tools": [
+        "text_message"
+      ]
+    },
+    "meltdown_in_public": {
+      "script": "what_to_do_after_public_scene",
+      "tone_profile": "Calm Companion",
+      "tools": [
+        "voice_note"
+      ]
+    },
+    "apology_repair": {
+      "script": "repair_after_misstep",
+      "tone_profile": "Bridge Builder",
+      "tools": [
+        "text_message"
+      ]
+    },
+    "emotional_encouragement": {
+      "script": "short_encouragement_note",
+      "tone_profile": "Celebration Coach",
+      "tools": [
+        "printable_card"
+      ]
+    },
+    "gift_dropoff": {
+      "script": "support_without_words",
+      "tone_profile": "Gentle Listener",
+      "tools": [
+        "printable_card"
+      ]
+    },
+    "coordinated_help_offer": {
+      "script": "logistics_support_offer",
+      "tone_profile": "Grounded Ally",
+      "tools": [
+        "text_message"
+      ]
+    },
+    "offering_break": {
+      "script": "rest_offer_script",
+      "tone_profile": "Calm Companion",
+      "tools": [
+        "text_message"
+      ]
+    },
+    "reaffirm_friendship": {
+      "script": "friendship_reaffirmation",
+      "tone_profile": "Gentle Listener",
+      "tools": [
+        "voice_note"
+      ]
+    },
+    "follow_up_on_post": {
+      "script": "support_after_social_post",
+      "tone_profile": "Bridge Builder",
+      "tools": [
+        "text_message"
+      ]
+    },
+    "include_sibling": {
+      "script": "checkin_about_sibling",
+      "tone_profile": "Curious Companion",
+      "tools": [
+        "text_message"
+      ]
+    },
+    "support_during_transition": {
+      "script": "school_or_routine_shift_support",
+      "tone_profile": "Grounded Ally",
+      "tools": [
+        "text_message"
+      ]
+    },
+    "after_long_silence": {
+      "script": "reconnect_after_time",
+      "tone_profile": "Bridge Builder",
+      "tools": [
+        "text_message",
+        "voice_note"
+      ]
+    },
+    "support_after_diagnosis_share": {
+      "script": "reaction_to_autism_disclosure",
+      "tone_profile": "Curious Companion",
+      "tools": [
+        "text_message"
+      ]
+    },
+    "include_family_in_event": {
+      "script": "event_inclusion_offer",
+      "tone_profile": "Gentle Listener",
+      "tools": [
+        "text_message"
+      ]
+    },
+    "thank_you_script": {
+      "script": "expressing_gratitude",
+      "tone_profile": "Celebration Coach",
+      "tools": [
+        "printable_card",
+        "text_message"
+      ]
+    },
+    "acknowledge_effort": {
+      "script": "noticing_parent_strength",
+      "tone_profile": "Gentle Listener",
+      "tools": [
+        "voice_note"
+      ]
+    },
+    "emergency_support_offer": {
+      "script": "fast_help_script",
+      "tone_profile": "Grounded Ally",
+      "tools": [
+        "text_message"
+      ]
+    }
+  },
+  "role_lookup": {
+    "Sibling": {
+      "default_tone": "Curious Companion",
+      "emotional_triggers": [
+        "feeling left out",
+        "not knowing how to help"
+      ],
+      "strengths": [
+        "shared history",
+        "emotional honesty",
+        "long-term care presence"
+      ]
+    },
+    "Neighbor": {
+      "default_tone": "Gentle Listener",
+      "emotional_triggers": [
+        "worrying they\u2019ll intrude",
+        "feeling like an outsider"
+      ],
+      "strengths": [
+        "proximity",
+        "ability to offer practical help",
+        "quick check-ins"
+      ]
+    },
+    "Faith Leader": {
+      "default_tone": "Calm Companion",
+      "emotional_triggers": [
+        "fear of overstepping",
+        "spiritual dissonance"
+      ],
+      "strengths": [
+        "community authority",
+        "spiritual comfort",
+        "consistent presence"
+      ]
+    },
+    "Work Friend": {
+      "default_tone": "Grounded Ally",
+      "emotional_triggers": [
+        "feeling it's not their place",
+        "work-life boundary worry"
+      ],
+      "strengths": [
+        "casual support",
+        "shared routines",
+        "empathy from parallel stress"
+      ]
+    },
+    "Estranged Relative": {
+      "default_tone": "Bridge Builder",
+      "emotional_triggers": [
+        "shame from absence",
+        "fear of rejection"
+      ],
+      "strengths": [
+        "potential healing",
+        "willingness to try again",
+        "outside perspective"
+      ]
+    },
+    "Coach": {
+      "default_tone": "Curious Companion",
+      "emotional_triggers": [
+        "unsure how autism affects coaching",
+        "conflict with team culture"
+      ],
+      "strengths": [
+        "trusted adult presence",
+        "growth mindset language",
+        "connection through activity"
+      ]
+    },
+    "Teacher": {
+      "default_tone": "Calm Companion",
+      "emotional_triggers": [
+        "systemic pressure",
+        "confusion about needs"
+      ],
+      "strengths": [
+        "daily contact",
+        "education skills",
+        "protective instinct"
+      ]
+    },
+    "Grandparent": {
+      "default_tone": "Gentle Listener",
+      "emotional_triggers": [
+        "feeling left behind by new parenting culture",
+        "sadness for their child"
+      ],
+      "strengths": [
+        "deep love",
+        "willingness to show up",
+        "generational perspective"
+      ]
+    },
+    "Medical Specialist": {
+      "default_tone": "Grounded Ally",
+      "emotional_triggers": [
+        "time pressure",
+        "medical vs lived-experience tension"
+      ],
+      "strengths": [
+        "authority in care decisions",
+        "ability to document and refer",
+        "clinical empathy"
+      ]
+    },
+    "Online Ally": {
+      "default_tone": "Bridge Builder",
+      "emotional_triggers": [
+        "fear of performative support",
+        "internet fatigue"
+      ],
+      "strengths": [
+        "platform amplification",
+        "emotional check-ins",
+        "public advocacy"
+      ]
+    },
+    "Community Volunteer": {
+      "default_tone": "Gentle Listener",
+      "emotional_triggers": [
+        "not knowing the family well",
+        "fear of doing it wrong"
+      ],
+      "strengths": [
+        "event help",
+        "resource delivery",
+        "open-hearted presence"
+      ]
+    },
+    "Babysitter": {
+      "default_tone": "Calm Companion",
+      "emotional_triggers": [
+        "not understanding routines",
+        "confusion during meltdowns"
+      ],
+      "strengths": [
+        "hands-on help",
+        "short burst support",
+        "care continuity"
+      ]
+    },
+    "Therapist": {
+      "default_tone": "Calm Companion",
+      "emotional_triggers": [
+        "professional boundaries",
+        "empathy overload"
+      ],
+      "strengths": [
+        "supportive insights",
+        "boundary modeling",
+        "emotional validation"
+      ]
+    },
+    "Spouse's Friend": {
+      "default_tone": "Grounded Ally",
+      "emotional_triggers": [
+        "loyalty confusion",
+        "not knowing their role"
+      ],
+      "strengths": [
+        "emotional triangulation support",
+        "casual availability",
+        "relational memory"
+      ]
+    },
+    "Teen Volunteer": {
+      "default_tone": "Curious Companion",
+      "emotional_triggers": [
+        "inexperience",
+        "fear of saying the wrong thing"
+      ],
+      "strengths": [
+        "energy",
+        "openness",
+        "peer engagement"
+      ]
+    },
+    "School Counselor": {
+      "default_tone": "Calm Companion",
+      "emotional_triggers": [
+        "institutional pressure",
+        "empathy burnout"
+      ],
+      "strengths": [
+        "student-level perspective",
+        "communication bridge",
+        "protective insight"
+      ]
+    },
+    "Lunchroom Staff": {
+      "default_tone": "Gentle Listener",
+      "emotional_triggers": [
+        "lack of training",
+        "fear of making it worse"
+      ],
+      "strengths": [
+        "daily visibility",
+        "protective proximity",
+        "observational empathy"
+      ]
+    },
+    "Bus Driver": {
+      "default_tone": "Grounded Ally",
+      "emotional_triggers": [
+        "chaotic routines",
+        "little info shared"
+      ],
+      "strengths": [
+        "predictable schedule",
+        "quick interventions",
+        "calming repetition"
+      ]
+    },
+    "Therapy Assistant": {
+      "default_tone": "Curious Companion",
+      "emotional_triggers": [
+        "uncertainty with parent expectations",
+        "conflicting models"
+      ],
+      "strengths": [
+        "trust-building with child",
+        "reporting behavior",
+        "hands-on support"
+      ]
+    },
+    "Friend of Sibling": {
+      "default_tone": "Curious Companion",
+      "emotional_triggers": [
+        "peer pressure",
+        "fear of making things awkward"
+      ],
+      "strengths": [
+        "normalization",
+        "sidekick energy",
+        "openness to learn"
+      ]
+    },
+    "Room Parent": {
+      "default_tone": "Bridge Builder",
+      "emotional_triggers": [
+        "not sure how to include everyone",
+        "awkward group dynamics"
+      ],
+      "strengths": [
+        "event planning",
+        "parent network access",
+        "logistical support"
+      ]
+    },
+    "Support Group Peer": {
+      "default_tone": "Grounded Ally",
+      "emotional_triggers": [
+        "projection",
+        "grief reliving"
+      ],
+      "strengths": [
+        "shared experience",
+        "empathy reservoir",
+        "non-judgmental listening"
+      ]
+    },
+    "Daycare Worker": {
+      "default_tone": "Calm Companion",
+      "emotional_triggers": [
+        "understaffing",
+        "behavior misunderstandings"
+      ],
+      "strengths": [
+        "early care familiarity",
+        "routine implementation",
+        "communication with parents"
+      ]
+    },
+    "Recreational Leader": {
+      "default_tone": "Curious Companion",
+      "emotional_triggers": [
+        "managing mixed group needs",
+        "fear of exclusion mistakes"
+      ],
+      "strengths": [
+        "joy creation",
+        "sensory-friendly adaptation",
+        "shared play"
+      ]
+    },
+    "Mentor": {
+      "default_tone": "Bridge Builder",
+      "emotional_triggers": [
+        "uncertainty about family needs",
+        "emotional closeness vulnerability"
+      ],
+      "strengths": [
+        "modeling possibilities",
+        "emotional encouragement",
+        "consistency"
+      ]
+    },
+    "Cousin": {
+      "default_tone": "Gentle Listener",
+      "emotional_triggers": [
+        "awkwardness about autism",
+        "drifted relationship"
+      ],
+      "strengths": [
+        "informal connection",
+        "family continuity",
+        "relatability"
+      ]
+    },
+    "Roommate": {
+      "default_tone": "Grounded Ally",
+      "emotional_triggers": [
+        "lifestyle clash",
+        "privacy confusion"
+      ],
+      "strengths": [
+        "shared space awareness",
+        "observational support",
+        "presence"
+      ]
+    },
+    "Online Moderator": {
+      "default_tone": "Bridge Builder",
+      "emotional_triggers": [
+        "tone policing",
+        "empathy fatigue"
+      ],
+      "strengths": [
+        "boundary keeping",
+        "peer regulation",
+        "creating safe spaces"
+      ]
+    },
+    "Community Organizer": {
+      "default_tone": "Celebration Coach",
+      "emotional_triggers": [
+        "scaling support vs. personal care",
+        "visibility pressure"
+      ],
+      "strengths": [
+        "network building",
+        "rallying support",
+        "logistical generosity"
+      ]
+    },
+    "Faith Youth Leader": {
+      "default_tone": "Gentle Listener",
+      "emotional_triggers": [
+        "moral language conflict",
+        "teen pushback"
+      ],
+      "strengths": [
+        "youth modeling",
+        "bridge to family",
+        "spiritual nurturing"
+      ]
+    },
+    "Supportive Stranger": {
+      "default_tone": "Gentle Listener",
+      "emotional_triggers": [
+        "not wanting to offend",
+        "emotional hesitation"
+      ],
+      "strengths": [
+        "surprising support",
+        "acts of kindness",
+        "small gestures"
+      ]
+    },
+    "Civic Leader": {
+      "default_tone": "Bridge Builder",
+      "emotional_triggers": [
+        "bureaucracy vs. personal emotion",
+        "pressure to do it right"
+      ],
+      "strengths": [
+        "policy influence",
+        "public visibility",
+        "structural compassion"
+      ]
+    },
+    "Best Friend": {
+      "default_tone": "Gentle Listener",
+      "emotional_triggers": [
+        "fear of getting it wrong",
+        "emotional closeness vulnerability"
+      ],
+      "strengths": [
+        "emotional memory",
+        "loyalty",
+        "reliable connection"
+      ]
+    }
+  },
+  "emotion_lookup": {
+    "guilt": {
+      "best_tones": [
+        "Bridge Builder",
+        "Gentle Listener"
+      ],
+      "fallback": "repair_after_rejection",
+      "supporter_nudge": "It\u2019s never too late to reconnect. Even a quiet gesture means something."
+    },
+    "overwhelm": {
+      "best_tones": [
+        "Calm Companion"
+      ],
+      "fallback": "text_checkin_story",
+      "supporter_nudge": "Start small. Presence is powerful, even without words."
+    },
+    "hope": {
+      "best_tones": [
+        "Celebration Coach",
+        "Grounded Ally"
+      ],
+      "fallback": "soft_retry_script",
+      "supporter_nudge": "Hope grows in small acts of kindness. You don\u2019t have to fix anything to help."
+    },
+    "shame": {
+      "best_tones": [
+        "Gentle Listener",
+        "Soft Challenger"
+      ],
+      "fallback": "gentle_repair_bridge",
+      "supporter_nudge": "You're not the mistake. Support is still welcome, even if it\u2019s awkward at first."
+    },
+    "anxiety": {
+      "best_tones": [
+        "Grounded Ally",
+        "Calm Companion"
+      ],
+      "fallback": "soft_retry_script",
+      "supporter_nudge": "It\u2019s okay to be nervous. Just showing up with care matters more than saying it perfectly."
+    },
+    "confusion": {
+      "best_tones": [
+        "Curious Companion",
+        "Bridge Builder"
+      ],
+      "fallback": "clarity_prompt",
+      "supporter_nudge": "Asking a thoughtful question can be a form of love."
+    },
+    "regret": {
+      "best_tones": [
+        "Bridge Builder",
+        "Gentle Listener"
+      ],
+      "fallback": "reconnect_apology_script",
+      "supporter_nudge": "Repair matters more than perfection. You\u2019re allowed to show up again."
+    },
+    "embarrassment": {
+      "best_tones": [
+        "Curious Companion"
+      ],
+      "fallback": "light_text_bridge",
+      "supporter_nudge": "Humor, honesty, and warmth go a long way in awkward moments."
+    },
+    "curiosity": {
+      "best_tones": [
+        "Curious Companion",
+        "Grounded Ally"
+      ],
+      "fallback": "starter_question",
+      "supporter_nudge": "Curiosity is a form of care when it\u2019s gentle and open-hearted."
+    },
+    "helplessness": {
+      "best_tones": [
+        "Calm Companion",
+        "Gentle Listener"
+      ],
+      "fallback": "presence_script",
+      "supporter_nudge": "You don\u2019t need the perfect solution \u2014 just be a steady voice."
+    },
+    "tenderness": {
+      "best_tones": [
+        "Gentle Listener",
+        "Celebration Coach"
+      ],
+      "fallback": "short_text_gesture",
+      "supporter_nudge": "Follow your heart. Even small messages can hold deep meaning."
+    },
+    "discomfort": {
+      "best_tones": [
+        "Curious Companion",
+        "Bridge Builder"
+      ],
+      "fallback": "acknowledge_uncertainty_script",
+      "supporter_nudge": "You can name the discomfort and still offer care. It builds trust."
+    },
+    "insecurity": {
+      "best_tones": [
+        "Grounded Ally",
+        "Soft Challenger"
+      ],
+      "fallback": "permission_to_help_script",
+      "supporter_nudge": "Even uncertain support is better than silence when it\u2019s genuine."
+    },
+    "isolation": {
+      "best_tones": [
+        "Gentle Listener",
+        "Bridge Builder"
+      ],
+      "fallback": "surprise_connection_card",
+      "supporter_nudge": "You don\u2019t have to be close to help someone feel less alone."
+    },
+    "frustration": {
+      "best_tones": [
+        "Calm Companion"
+      ],
+      "fallback": "reflective_text",
+      "supporter_nudge": "It\u2019s okay to feel frustrated. What you do next is what counts."
+    },
+    "love": {
+      "best_tones": [
+        "Gentle Listener",
+        "Celebration Coach"
+      ],
+      "fallback": "gratitude_script",
+      "supporter_nudge": "Lead with love. Even if it\u2019s clumsy, it will land."
+    }
+  }
+}

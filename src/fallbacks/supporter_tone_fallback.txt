@@ -1,0 +1,477 @@
+[
+  {
+    "scenario_tag": "awkward_start",
+    "misapplied_tone": "Energetic_Cheerleader",
+    "what_it_feels_like": "Overwhelming or performative, not safe or sincere",
+    "emotional_risk": "Shuts down conversation before it starts",
+    "gentle_redirect_line": "Oops, that may have been too much\u2014mind if I start again?",
+    "repaired_message": "I\u2019m here quietly, no pressure at all. Just wanted to check in.",
+    "suggested_persona": "The Gentle Mirror",
+    "breath_anchor": "Let\u2019s take a breath together if you need one.",
+    "reroute_script": "offering_help.txt",
+    "optional_teach_mode": "Sometimes cheerfulness can feel like pressure. Slowing down builds safety.",
+    "delivery_mode_flags": [
+      "\ud83d\udcf1",
+      "\ud83c\udf99\ufe0f",
+      "\ud83d\uddbc\ufe0f"
+    ],
+    "repeat_fallback_mode": "It\u2019s okay \u2014 tone is tricky. Let\u2019s try a simpler way.",
+    "emotion_tag": "uncertainty"
+  },
+  {
+    "scenario_tag": "scenario_02",
+    "misapplied_tone": "Tone_Type_2",
+    "what_it_feels_like": "Emotionally uncomfortable in scenario 2",
+    "emotional_risk": "Risk of disconnection in moment 2",
+    "gentle_redirect_line": "Gentle reset phrase for fallback 2",
+    "repaired_message": "Repaired message variation 2",
+    "suggested_persona": "Persona_2",
+    "breath_anchor": "Optional breath reset for situation 2",
+    "reroute_script": "script_2.txt",
+    "optional_teach_mode": "Teach insight 2",
+    "delivery_mode_flags": [
+      "\ud83d\udcf1",
+      "\ud83c\udf99\ufe0f",
+      "\ud83d\uddbc\ufe0f"
+    ],
+    "repeat_fallback_mode": "Repeat mode message 2",
+    "emotion_tag": "emotion_2"
+  },
+  {
+    "scenario_tag": "scenario_03",
+    "misapplied_tone": "Tone_Type_3",
+    "what_it_feels_like": "Emotionally uncomfortable in scenario 3",
+    "emotional_risk": "Risk of disconnection in moment 3",
+    "gentle_redirect_line": "Gentle reset phrase for fallback 3",
+    "repaired_message": "Repaired message variation 3",
+    "suggested_persona": "Persona_3",
+    "breath_anchor": "Optional breath reset for situation 3",
+    "reroute_script": "script_3.txt",
+    "optional_teach_mode": "Teach insight 3",
+    "delivery_mode_flags": [
+      "\ud83d\udcf1",
+      "\ud83c\udf99\ufe0f",
+      "\ud83d\uddbc\ufe0f"
+    ],
+    "repeat_fallback_mode": "Repeat mode message 3",
+    "emotion_tag": "emotion_3"
+  },
+  {
+    "scenario_tag": "scenario_04",
+    "misapplied_tone": "Tone_Type_4",
+    "what_it_feels_like": "Emotionally uncomfortable in scenario 4",
+    "emotional_risk": "Risk of disconnection in moment 4",
+    "gentle_redirect_line": "Gentle reset phrase for fallback 4",
+    "repaired_message": "Repaired message variation 4",
+    "suggested_persona": "Persona_4",
+    "breath_anchor": "Optional breath reset for situation 4",
+    "reroute_script": "script_4.txt",
+    "optional_teach_mode": "Teach insight 4",
+    "delivery_mode_flags": [
+      "\ud83d\udcf1",
+      "\ud83c\udf99\ufe0f",
+      "\ud83d\uddbc\ufe0f"
+    ],
+    "repeat_fallback_mode": "Repeat mode message 4",
+    "emotion_tag": "emotion_4"
+  },
+  {
+    "scenario_tag": "scenario_05",
+    "misapplied_tone": "Tone_Type_5",
+    "what_it_feels_like": "Emotionally uncomfortable in scenario 5",
+    "emotional_risk": "Risk of disconnection in moment 5",
+    "gentle_redirect_line": "Gentle reset phrase for fallback 5",
+    "repaired_message": "Repaired message variation 5",
+    "suggested_persona": "Persona_5",
+    "breath_anchor": "Optional breath reset for situation 5",
+    "reroute_script": "script_5.txt",
+    "optional_teach_mode": "Teach insight 5",
+    "delivery_mode_flags": [
+      "\ud83d\udcf1",
+      "\ud83c\udf99\ufe0f",
+      "\ud83d\uddbc\ufe0f"
+    ],
+    "repeat_fallback_mode": "Repeat mode message 5",
+    "emotion_tag": "emotion_5"
+  },
+  {
+    "scenario_tag": "scenario_06",
+    "misapplied_tone": "Tone_Type_6",
+    "what_it_feels_like": "Emotionally uncomfortable in scenario 6",
+    "emotional_risk": "Risk of disconnection in moment 6",
+    "gentle_redirect_line": "Gentle reset phrase for fallback 6",
+    "repaired_message": "Repaired message variation 6",
+    "suggested_persona": "Persona_6",
+    "breath_anchor": "Optional breath reset for situation 6",
+    "reroute_script": "script_6.txt",
+    "optional_teach_mode": "Teach insight 6",
+    "delivery_mode_flags": [
+      "\ud83d\udcf1",
+      "\ud83c\udf99\ufe0f",
+      "\ud83d\uddbc\ufe0f"
+    ],
+    "repeat_fallback_mode": "Repeat mode message 6",
+    "emotion_tag": "emotion_6"
+  },
+  {
+    "scenario_tag": "scenario_07",
+    "misapplied_tone": "Tone_Type_7",
+    "what_it_feels_like": "Emotionally uncomfortable in scenario 7",
+    "emotional_risk": "Risk of disconnection in moment 7",
+    "gentle_redirect_line": "Gentle reset phrase for fallback 7",
+    "repaired_message": "Repaired message variation 7",
+    "suggested_persona": "Persona_7",
+    "breath_anchor": "Optional breath reset for situation 7",
+    "reroute_script": "script_7.txt",
+    "optional_teach_mode": "Teach insight 7",
+    "delivery_mode_flags": [
+      "\ud83d\udcf1",
+      "\ud83c\udf99\ufe0f",
+      "\ud83d\uddbc\ufe0f"
+    ],
+    "repeat_fallback_mode": "Repeat mode message 7",
+    "emotion_tag": "emotion_7"
+  },
+  {
+    "scenario_tag": "scenario_08",
+    "misapplied_tone": "Tone_Type_8",
+    "what_it_feels_like": "Emotionally uncomfortable in scenario 8",
+    "emotional_risk": "Risk of disconnection in moment 8",
+    "gentle_redirect_line": "Gentle reset phrase for fallback 8",
+    "repaired_message": "Repaired message variation 8",
+    "suggested_persona": "Persona_8",
+    "breath_anchor": "Optional breath reset for situation 8",
+    "reroute_script": "script_8.txt",
+    "optional_teach_mode": "Teach insight 8",
+    "delivery_mode_flags": [
+      "\ud83d\udcf1",
+      "\ud83c\udf99\ufe0f",
+      "\ud83d\uddbc\ufe0f"
+    ],
+    "repeat_fallback_mode": "Repeat mode message 8",
+    "emotion_tag": "emotion_8"
+  },
+  {
+    "scenario_tag": "scenario_09",
+    "misapplied_tone": "Tone_Type_9",
+    "what_it_feels_like": "Emotionally uncomfortable in scenario 9",
+    "emotional_risk": "Risk of disconnection in moment 9",
+    "gentle_redirect_line": "Gentle reset phrase for fallback 9",
+    "repaired_message": "Repaired message variation 9",
+    "suggested_persona": "Persona_9",
+    "breath_anchor": "Optional breath reset for situation 9",
+    "reroute_script": "script_9.txt",
+    "optional_teach_mode": "Teach insight 9",
+    "delivery_mode_flags": [
+      "\ud83d\udcf1",
+      "\ud83c\udf99\ufe0f",
+      "\ud83d\uddbc\ufe0f"
+    ],
+    "repeat_fallback_mode": "Repeat mode message 9",
+    "emotion_tag": "emotion_9"
+  },
+  {
+    "scenario_tag": "scenario_10",
+    "misapplied_tone": "Tone_Type_10",
+    "what_it_feels_like": "Emotionally uncomfortable in scenario 10",
+    "emotional_risk": "Risk of disconnection in moment 10",
+    "gentle_redirect_line": "Gentle reset phrase for fallback 10",
+    "repaired_message": "Repaired message variation 10",
+    "suggested_persona": "Persona_10",
+    "breath_anchor": "Optional breath reset for situation 10",
+    "reroute_script": "script_10.txt",
+    "optional_teach_mode": "Teach insight 10",
+    "delivery_mode_flags": [
+      "\ud83d\udcf1",
+      "\ud83c\udf99\ufe0f",
+      "\ud83d\uddbc\ufe0f"
+    ],
+    "repeat_fallback_mode": "Repeat mode message 10",
+    "emotion_tag": "emotion_10"
+  },
+  {
+    "scenario_tag": "scenario_11",
+    "misapplied_tone": "Tone_Type_11",
+    "what_it_feels_like": "Emotionally uncomfortable in scenario 11",
+    "emotional_risk": "Risk of disconnection in moment 11",
+    "gentle_redirect_line": "Gentle reset phrase for fallback 11",
+    "repaired_message": "Repaired message variation 11",
+    "suggested_persona": "Persona_11",
+    "breath_anchor": "Optional breath reset for situation 11",
+    "reroute_script": "script_11.txt",
+    "optional_teach_mode": "Teach insight 11",
+    "delivery_mode_flags": [
+      "\ud83d\udcf1",
+      "\ud83c\udf99\ufe0f",
+      "\ud83d\uddbc\ufe0f"
+    ],
+    "repeat_fallback_mode": "Repeat mode message 11",
+    "emotion_tag": "emotion_11"
+  },
+  {
+    "scenario_tag": "scenario_12",
+    "misapplied_tone": "Tone_Type_12",
+    "what_it_feels_like": "Emotionally uncomfortable in scenario 12",
+    "emotional_risk": "Risk of disconnection in moment 12",
+    "gentle_redirect_line": "Gentle reset phrase for fallback 12",
+    "repaired_message": "Repaired message variation 12",
+    "suggested_persona": "Persona_12",
+    "breath_anchor": "Optional breath reset for situation 12",
+    "reroute_script": "script_12.txt",
+    "optional_teach_mode": "Teach insight 12",
+    "delivery_mode_flags": [
+      "\ud83d\udcf1",
+      "\ud83c\udf99\ufe0f",
+      "\ud83d\uddbc\ufe0f"
+    ],
+    "repeat_fallback_mode": "Repeat mode message 12",
+    "emotion_tag": "emotion_12"
+  },
+  {
+    "scenario_tag": "scenario_13",
+    "misapplied_tone": "Tone_Type_13",
+    "what_it_feels_like": "Emotionally uncomfortable in scenario 13",
+    "emotional_risk": "Risk of disconnection in moment 13",
+    "gentle_redirect_line": "Gentle reset phrase for fallback 13",
+    "repaired_message": "Repaired message variation 13",
+    "suggested_persona": "Persona_13",
+    "breath_anchor": "Optional breath reset for situation 13",
+    "reroute_script": "script_13.txt",
+    "optional_teach_mode": "Teach insight 13",
+    "delivery_mode_flags": [
+      "\ud83d\udcf1",
+      "\ud83c\udf99\ufe0f",
+      "\ud83d\uddbc\ufe0f"
+    ],
+    "repeat_fallback_mode": "Repeat mode message 13",
+    "emotion_tag": "emotion_13"
+  },
+  {
+    "scenario_tag": "scenario_14",
+    "misapplied_tone": "Tone_Type_14",
+    "what_it_feels_like": "Emotionally uncomfortable in scenario 14",
+    "emotional_risk": "Risk of disconnection in moment 14",
+    "gentle_redirect_line": "Gentle reset phrase for fallback 14",
+    "repaired_message": "Repaired message variation 14",
+    "suggested_persona": "Persona_14",
+    "breath_anchor": "Optional breath reset for situation 14",
+    "reroute_script": "script_14.txt",
+    "optional_teach_mode": "Teach insight 14",
+    "delivery_mode_flags": [
+      "\ud83d\udcf1",
+      "\ud83c\udf99\ufe0f",
+      "\ud83d\uddbc\ufe0f"
+    ],
+    "repeat_fallback_mode": "Repeat mode message 14",
+    "emotion_tag": "emotion_14"
+  },
+  {
+    "scenario_tag": "scenario_15",
+    "misapplied_tone": "Tone_Type_15",
+    "what_it_feels_like": "Emotionally uncomfortable in scenario 15",
+    "emotional_risk": "Risk of disconnection in moment 15",
+    "gentle_redirect_line": "Gentle reset phrase for fallback 15",
+    "repaired_message": "Repaired message variation 15",
+    "suggested_persona": "Persona_15",
+    "breath_anchor": "Optional breath reset for situation 15",
+    "reroute_script": "script_15.txt",
+    "optional_teach_mode": "Teach insight 15",
+    "delivery_mode_flags": [
+      "\ud83d\udcf1",
+      "\ud83c\udf99\ufe0f",
+      "\ud83d\uddbc\ufe0f"
+    ],
+    "repeat_fallback_mode": "Repeat mode message 15",
+    "emotion_tag": "emotion_15"
+  },
+  {
+    "scenario_tag": "scenario_16",
+    "misapplied_tone": "Tone_Type_16",
+    "what_it_feels_like": "Emotionally uncomfortable in scenario 16",
+    "emotional_risk": "Risk of disconnection in moment 16",
+    "gentle_redirect_line": "Gentle reset phrase for fallback 16",
+    "repaired_message": "Repaired message variation 16",
+    "suggested_persona": "Persona_16",
+    "breath_anchor": "Optional breath reset for situation 16",
+    "reroute_script": "script_16.txt",
+    "optional_teach_mode": "Teach insight 16",
+    "delivery_mode_flags": [
+      "\ud83d\udcf1",
+      "\ud83c\udf99\ufe0f",
+      "\ud83d\uddbc\ufe0f"
+    ],
+    "repeat_fallback_mode": "Repeat mode message 16",
+    "emotion_tag": "emotion_16"
+  },
+  {
+    "scenario_tag": "scenario_17",
+    "misapplied_tone": "Tone_Type_17",
+    "what_it_feels_like": "Emotionally uncomfortable in scenario 17",
+    "emotional_risk": "Risk of disconnection in moment 17",
+    "gentle_redirect_line": "Gentle reset phrase for fallback 17",
+    "repaired_message": "Repaired message variation 17",
+    "suggested_persona": "Persona_17",
+    "breath_anchor": "Optional breath reset for situation 17",
+    "reroute_script": "script_17.txt",
+    "optional_teach_mode": "Teach insight 17",
+    "delivery_mode_flags": [
+      "\ud83d\udcf1",
+      "\ud83c\udf99\ufe0f",
+      "\ud83d\uddbc\ufe0f"
+    ],
+    "repeat_fallback_mode": "Repeat mode message 17",
+    "emotion_tag": "emotion_17"
+  },
+  {
+    "scenario_tag": "scenario_18",
+    "misapplied_tone": "Tone_Type_18",
+    "what_it_feels_like": "Emotionally uncomfortable in scenario 18",
+    "emotional_risk": "Risk of disconnection in moment 18",
+    "gentle_redirect_line": "Gentle reset phrase for fallback 18",
+    "repaired_message": "Repaired message variation 18",
+    "suggested_persona": "Persona_18",
+    "breath_anchor": "Optional breath reset for situation 18",
+    "reroute_script": "script_18.txt",
+    "optional_teach_mode": "Teach insight 18",
+    "delivery_mode_flags": [
+      "\ud83d\udcf1",
+      "\ud83c\udf99\ufe0f",
+      "\ud83d\uddbc\ufe0f"
+    ],
+    "repeat_fallback_mode": "Repeat mode message 18",
+    "emotion_tag": "emotion_18"
+  },
+  {
+    "scenario_tag": "scenario_19",
+    "misapplied_tone": "Tone_Type_19",
+    "what_it_feels_like": "Emotionally uncomfortable in scenario 19",
+    "emotional_risk": "Risk of disconnection in moment 19",
+    "gentle_redirect_line": "Gentle reset phrase for fallback 19",
+    "repaired_message": "Repaired message variation 19",
+    "suggested_persona": "Persona_19",
+    "breath_anchor": "Optional breath reset for situation 19",
+    "reroute_script": "script_19.txt",
+    "optional_teach_mode": "Teach insight 19",
+    "delivery_mode_flags": [
+      "\ud83d\udcf1",
+      "\ud83c\udf99\ufe0f",
+      "\ud83d\uddbc\ufe0f"
+    ],
+    "repeat_fallback_mode": "Repeat mode message 19",
+    "emotion_tag": "emotion_19"
+  },
+  {
+    "scenario_tag": "scenario_20",
+    "misapplied_tone": "Tone_Type_20",
+    "what_it_feels_like": "Emotionally uncomfortable in scenario 20",
+    "emotional_risk": "Risk of disconnection in moment 20",
+    "gentle_redirect_line": "Gentle reset phrase for fallback 20",
+    "repaired_message": "Repaired message variation 20",
+    "suggested_persona": "Persona_20",
+    "breath_anchor": "Optional breath reset for situation 20",
+    "reroute_script": "script_20.txt",
+    "optional_teach_mode": "Teach insight 20",
+    "delivery_mode_flags": [
+      "\ud83d\udcf1",
+      "\ud83c\udf99\ufe0f",
+      "\ud83d\uddbc\ufe0f"
+    ],
+    "repeat_fallback_mode": "Repeat mode message 20",
+    "emotion_tag": "emotion_20"
+  },
+  {
+    "scenario_tag": "scenario_21",
+    "misapplied_tone": "Tone_Type_21",
+    "what_it_feels_like": "Emotionally uncomfortable in scenario 21",
+    "emotional_risk": "Risk of disconnection in moment 21",
+    "gentle_redirect_line": "Gentle reset phrase for fallback 21",
+    "repaired_message": "Repaired message variation 21",
+    "suggested_persona": "Persona_21",
+    "breath_anchor": "Optional breath reset for situation 21",
+    "reroute_script": "script_21.txt",
+    "optional_teach_mode": "Teach insight 21",
+    "delivery_mode_flags": [
+      "\ud83d\udcf1",
+      "\ud83c\udf99\ufe0f",
+      "\ud83d\uddbc\ufe0f"
+    ],
+    "repeat_fallback_mode": "Repeat mode message 21",
+    "emotion_tag": "emotion_21"
+  },
+  {
+    "scenario_tag": "scenario_22",
+    "misapplied_tone": "Tone_Type_22",
+    "what_it_feels_like": "Emotionally uncomfortable in scenario 22",
+    "emotional_risk": "Risk of disconnection in moment 22",
+    "gentle_redirect_line": "Gentle reset phrase for fallback 22",
+    "repaired_message": "Repaired message variation 22",
+    "suggested_persona": "Persona_22",
+    "breath_anchor": "Optional breath reset for situation 22",
+    "reroute_script": "script_22.txt",
+    "optional_teach_mode": "Teach insight 22",
+    "delivery_mode_flags": [
+      "\ud83d\udcf1",
+      "\ud83c\udf99\ufe0f",
+      "\ud83d\uddbc\ufe0f"
+    ],
+    "repeat_fallback_mode": "Repeat mode message 22",
+    "emotion_tag": "emotion_22"
+  },
+  {
+    "scenario_tag": "scenario_23",
+    "misapplied_tone": "Tone_Type_23",
+    "what_it_feels_like": "Emotionally uncomfortable in scenario 23",
+    "emotional_risk": "Risk of disconnection in moment 23",
+    "gentle_redirect_line": "Gentle reset phrase for fallback 23",
+    "repaired_message": "Repaired message variation 23",
+    "suggested_persona": "Persona_23",
+    "breath_anchor": "Optional breath reset for situation 23",
+    "reroute_script": "script_23.txt",
+    "optional_teach_mode": "Teach insight 23",
+    "delivery_mode_flags": [
+      "\ud83d\udcf1",
+      "\ud83c\udf99\ufe0f",
+      "\ud83d\uddbc\ufe0f"
+    ],
+    "repeat_fallback_mode": "Repeat mode message 23",
+    "emotion_tag": "emotion_23"
+  },
+  {
+    "scenario_tag": "scenario_24",
+    "misapplied_tone": "Tone_Type_24",
+    "what_it_feels_like": "Emotionally uncomfortable in scenario 24",
+    "emotional_risk": "Risk of disconnection in moment 24",
+    "gentle_redirect_line": "Gentle reset phrase for fallback 24",
+    "repaired_message": "Repaired message variation 24",
+    "suggested_persona": "Persona_24",
+    "breath_anchor": "Optional breath reset for situation 24",
+    "reroute_script": "script_24.txt",
+    "optional_teach_mode": "Teach insight 24",
+    "delivery_mode_flags": [
+      "\ud83d\udcf1",
+      "\ud83c\udf99\ufe0f",
+      "\ud83d\uddbc\ufe0f"
+    ],
+    "repeat_fallback_mode": "Repeat mode message 24",
+    "emotion_tag": "emotion_24"
+  },
+  {
+    "scenario_tag": "scenario_25",
+    "misapplied_tone": "Tone_Type_25",
+    "what_it_feels_like": "Emotionally uncomfortable in scenario 25",
+    "emotional_risk": "Risk of disconnection in moment 25",
+    "gentle_redirect_line": "Gentle reset phrase for fallback 25",
+    "repaired_message": "Repaired message variation 25",
+    "suggested_persona": "Persona_25",
+    "breath_anchor": "Optional breath reset for situation 25",
+    "reroute_script": "script_25.txt",
+    "optional_teach_mode": "Teach insight 25",
+    "delivery_mode_flags": [
+      "\ud83d\udcf1",
+      "\ud83c\udf99\ufe0f",
+      "\ud83d\uddbc\ufe0f"
+    ],
+    "repeat_fallback_mode": "Repeat mode message 25",
+    "emotion_tag": "emotion_25"
+  }
+]

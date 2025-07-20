@@ -1,0 +1,1127 @@
+{
+  "script_001": {
+    "role_profile": "Close Friend",
+    "scenario": "Overwhelmed Parent After Public Meltdown",
+    "tone_tags": [
+      "gentle_encourager"
+    ],
+    "narrator_profile": "The Joyful Cheerleader",
+    "delivery_format": "text_message",
+    "linked_bots": [
+      "Supporter Guide GPT",
+      "Conversation Helper GPT"
+    ],
+    "recommended_tool": "show_up_tool_01"
+  },
+  "script_002": {
+    "role_profile": "Faith Leader",
+    "scenario": "Diagnosis Shock - Just Found Out",
+    "tone_tags": [
+      "calm_companion"
+    ],
+    "narrator_profile": "The Compassionate Witness",
+    "delivery_format": "printable_card",
+    "linked_bots": [
+      "Supporter Guide GPT",
+      "Conversation Helper GPT"
+    ],
+    "recommended_tool": "show_up_tool_01"
+  },
+  "script_003": {
+    "role_profile": "Grandparent",
+    "scenario": "Sibling Feeling Left Out During Therapy Focus",
+    "tone_tags": [
+      "cheerful_supporter"
+    ],
+    "narrator_profile": "The Capable Helper",
+    "delivery_format": "printable_card",
+    "linked_bots": [
+      "Supporter Guide GPT",
+      "Conversation Helper GPT"
+    ],
+    "recommended_tool": "show_up_tool_01"
+  },
+  "script_004": {
+    "role_profile": "Grandparent",
+    "scenario": "Financial Stress Around Therapy Costs",
+    "tone_tags": [
+      "grounded_ally"
+    ],
+    "narrator_profile": "The Steady Companion",
+    "delivery_format": "printable_card",
+    "linked_bots": [
+      "Supporter Guide GPT",
+      "Conversation Helper GPT"
+    ],
+    "recommended_tool": "show_up_tool_01"
+  },
+  "script_005": {
+    "role_profile": "Faith Leader",
+    "scenario": "Faith Leader Offering Help Without Pressure",
+    "tone_tags": [
+      "bridge_builder"
+    ],
+    "narrator_profile": "The Calming Guide",
+    "delivery_format": "printable_card",
+    "linked_bots": [
+      "Supporter Guide GPT",
+      "Conversation Helper GPT"
+    ],
+    "recommended_tool": "offer_help_tool_01"
+  },
+  "script_006": {
+    "role_profile": "Coach or Youth Leader",
+    "scenario": "Coach Noticing Child Excluded During Practice",
+    "tone_tags": [
+      "gentle_encourager"
+    ],
+    "narrator_profile": "The Joyful Cheerleader",
+    "delivery_format": "voice_note",
+    "linked_bots": [
+      "Supporter Guide GPT",
+      "Conversation Helper GPT"
+    ],
+    "recommended_tool": "show_up_tool_01"
+  },
+  "script_007": {
+    "role_profile": "Teacher",
+    "scenario": "Teacher Confused by Behavior During Class",
+    "tone_tags": [
+      "gentle_listener"
+    ],
+    "narrator_profile": "The Gentle Mirror",
+    "delivery_format": "voice_note",
+    "linked_bots": [
+      "Supporter Guide GPT",
+      "Conversation Helper GPT"
+    ],
+    "recommended_tool": "show_up_tool_01"
+  },
+  "script_008": {
+    "role_profile": "Neighbor",
+    "scenario": "Neighbor Wants to Help But Doesn\u2019t Know How",
+    "tone_tags": [
+      "cheerful_supporter"
+    ],
+    "narrator_profile": "The Capable Helper",
+    "delivery_format": "text_message",
+    "linked_bots": [
+      "Supporter Guide GPT",
+      "Conversation Helper GPT"
+    ],
+    "recommended_tool": "offer_help_tool_01"
+  },
+  "script_009": {
+    "role_profile": "Sibling",
+    "scenario": "Siblings Fighting About Autism-Related Routines",
+    "tone_tags": [
+      "gentle_encourager"
+    ],
+    "narrator_profile": "The Joyful Cheerleader",
+    "delivery_format": "text_message",
+    "linked_bots": [
+      "Supporter Guide GPT",
+      "Conversation Helper GPT"
+    ],
+    "recommended_tool": "show_up_tool_01"
+  },
+  "script_010": {
+    "role_profile": "Close Friend",
+    "scenario": "Friend Wants to Celebrate a Quiet Milestone",
+    "tone_tags": [
+      "cheerful_supporter"
+    ],
+    "narrator_profile": "The Capable Helper",
+    "delivery_format": "text_message",
+    "linked_bots": [
+      "Supporter Guide GPT",
+      "Conversation Helper GPT"
+    ],
+    "recommended_tool": "celebrate_tool_01"
+  },
+  "script_011": {
+    "role_profile": "Therapist or Provider",
+    "scenario": "Therapist Reporting No Progress to a Tired Parent",
+    "tone_tags": [
+      "calm_companion"
+    ],
+    "narrator_profile": "The Compassionate Witness",
+    "delivery_format": "text_message",
+    "linked_bots": [
+      "Supporter Guide GPT",
+      "Conversation Helper GPT"
+    ],
+    "recommended_tool": "show_up_tool_01"
+  },
+  "script_012": {
+    "role_profile": "Babysitter or Helper",
+    "scenario": "Babysitter Handling Sensory Overload While Helping",
+    "tone_tags": [
+      "cheerful_supporter"
+    ],
+    "narrator_profile": "The Capable Helper",
+    "delivery_format": "text_message",
+    "linked_bots": [
+      "Supporter Guide GPT",
+      "Conversation Helper GPT"
+    ],
+    "recommended_tool": "offer_help_tool_01"
+  },
+  "script_013": {
+    "role_profile": "Estranged Relative",
+    "scenario": "Unfamiliar Relative Attending Holiday Gathering",
+    "tone_tags": [
+      "bridge_builder"
+    ],
+    "narrator_profile": "The Calming Guide",
+    "delivery_format": "text_message",
+    "linked_bots": [
+      "Supporter Guide GPT",
+      "Conversation Helper GPT"
+    ],
+    "recommended_tool": "show_up_tool_01"
+  },
+  "script_014": {
+    "role_profile": "School Admin",
+    "scenario": "Parent Receiving Hard IEP Feedback",
+    "tone_tags": [
+      "grounded_ally"
+    ],
+    "narrator_profile": "The Steady Companion",
+    "delivery_format": "text_message",
+    "linked_bots": [
+      "Supporter Guide GPT",
+      "Conversation Helper GPT"
+    ],
+    "recommended_tool": "show_up_tool_01"
+  },
+  "script_015": {
+    "role_profile": "Ex-partner",
+    "scenario": "Co-Parent Conflict Around Routine Consistency",
+    "tone_tags": [
+      "bridge_builder"
+    ],
+    "narrator_profile": "The Calming Guide",
+    "delivery_format": "text_message",
+    "linked_bots": [
+      "Supporter Guide GPT",
+      "Conversation Helper GPT"
+    ],
+    "recommended_tool": "show_up_tool_01"
+  },
+  "script_016": {
+    "role_profile": "Online Ally",
+    "scenario": "Online Ally Reacting to Vulnerable Social Post",
+    "tone_tags": [
+      "gentle_listener"
+    ],
+    "narrator_profile": "The Gentle Mirror",
+    "delivery_format": "text_message",
+    "linked_bots": [
+      "Supporter Guide GPT",
+      "Conversation Helper GPT"
+    ],
+    "recommended_tool": "show_up_tool_01"
+  },
+  "script_017": {
+    "role_profile": "Sibling",
+    "scenario": "Late-Night Message After a Hard Day",
+    "tone_tags": [
+      "gentle_listener"
+    ],
+    "narrator_profile": "The Gentle Mirror",
+    "delivery_format": "text_message",
+    "linked_bots": [
+      "Supporter Guide GPT",
+      "Conversation Helper GPT"
+    ],
+    "recommended_tool": "show_up_tool_01"
+  },
+  "script_018": {
+    "role_profile": "Faith Leader",
+    "scenario": "Community Leader Planning an Inclusive Event",
+    "tone_tags": [
+      "bridge_builder"
+    ],
+    "narrator_profile": "The Calming Guide",
+    "delivery_format": "printable_card",
+    "linked_bots": [
+      "Supporter Guide GPT",
+      "Conversation Helper GPT"
+    ],
+    "recommended_tool": "show_up_tool_01"
+  },
+  "script_019": {
+    "role_profile": "Close Friend",
+    "scenario": "Friend Bringing Meal After a Rough Week",
+    "tone_tags": [
+      "cheerful_supporter"
+    ],
+    "narrator_profile": "The Capable Helper",
+    "delivery_format": "text_message",
+    "linked_bots": [
+      "Supporter Guide GPT",
+      "Conversation Helper GPT"
+    ],
+    "recommended_tool": "offer_help_tool_01"
+  },
+  "script_020": {
+    "role_profile": "Parent",
+    "scenario": "Child's Birthday Feels Emotionally Complex",
+    "tone_tags": [
+      "calm_companion"
+    ],
+    "narrator_profile": "The Compassionate Witness",
+    "delivery_format": "text_message",
+    "linked_bots": [
+      "Supporter Guide GPT",
+      "Conversation Helper GPT"
+    ],
+    "recommended_tool": "celebrate_tool_01"
+  },
+  "script_021": {
+    "role_profile": "Parent",
+    "scenario": "Therapy Cancellation Throws Off Whole Day",
+    "tone_tags": [
+      "gentle_listener"
+    ],
+    "narrator_profile": "The Gentle Mirror",
+    "delivery_format": "text_message",
+    "linked_bots": [
+      "Supporter Guide GPT",
+      "Conversation Helper GPT"
+    ],
+    "recommended_tool": "show_up_tool_01"
+  },
+  "script_022": {
+    "role_profile": "Faith Leader",
+    "scenario": "Volunteer at Church Wants to Be Inclusive",
+    "tone_tags": [
+      "bridge_builder"
+    ],
+    "narrator_profile": "The Calming Guide",
+    "delivery_format": "printable_card",
+    "linked_bots": [
+      "Supporter Guide GPT",
+      "Conversation Helper GPT"
+    ],
+    "recommended_tool": "show_up_tool_01"
+  },
+  "script_023": {
+    "role_profile": "Online Ally",
+    "scenario": "Unasked-for Advice From a Stranger",
+    "tone_tags": [
+      "gentle_listener"
+    ],
+    "narrator_profile": "The Gentle Mirror",
+    "delivery_format": "text_message",
+    "linked_bots": [
+      "Supporter Guide GPT",
+      "Conversation Helper GPT"
+    ],
+    "recommended_tool": "ask_question_tool_01"
+  },
+  "script_024": {
+    "role_profile": "Neighbor",
+    "scenario": "Friend Unsure Whether to Invite Family Out",
+    "tone_tags": [
+      "gentle_encourager"
+    ],
+    "narrator_profile": "The Joyful Cheerleader",
+    "delivery_format": "text_message",
+    "linked_bots": [
+      "Supporter Guide GPT",
+      "Conversation Helper GPT"
+    ],
+    "recommended_tool": "show_up_tool_01"
+  },
+  "script_025": {
+    "role_profile": "Sibling",
+    "scenario": "Older Sibling Worrying About Future",
+    "tone_tags": [
+      "calm_companion"
+    ],
+    "narrator_profile": "The Compassionate Witness",
+    "delivery_format": "text_message",
+    "linked_bots": [
+      "Supporter Guide GPT",
+      "Conversation Helper GPT"
+    ],
+    "recommended_tool": "show_up_tool_01"
+  },
+  "script_026": {
+    "role_profile": "Teacher",
+    "scenario": "Parent Can't Attend School Event Due to Burnout",
+    "tone_tags": [
+      "grounded_ally"
+    ],
+    "narrator_profile": "The Steady Companion",
+    "delivery_format": "voice_note",
+    "linked_bots": [
+      "Supporter Guide GPT",
+      "Conversation Helper GPT"
+    ],
+    "recommended_tool": "show_up_tool_01"
+  },
+  "script_027": {
+    "role_profile": "Grandparent",
+    "scenario": "Grandparent Offers to Help But Feels Rejected",
+    "tone_tags": [
+      "bridge_builder"
+    ],
+    "narrator_profile": "The Calming Guide",
+    "delivery_format": "printable_card",
+    "linked_bots": [
+      "Supporter Guide GPT",
+      "Conversation Helper GPT"
+    ],
+    "recommended_tool": "offer_help_tool_01"
+  },
+  "script_028": {
+    "role_profile": "Boss or Manager",
+    "scenario": "Boss Responds to Unexpected Time-Off Request",
+    "tone_tags": [
+      "grounded_ally"
+    ],
+    "narrator_profile": "The Steady Companion",
+    "delivery_format": "email",
+    "linked_bots": [
+      "Supporter Guide GPT",
+      "Conversation Helper GPT"
+    ],
+    "recommended_tool": "show_up_tool_01"
+  },
+  "script_029": {
+    "role_profile": "Estranged Relative",
+    "scenario": "Strained Relationship After a Misunderstood Comment",
+    "tone_tags": [
+      "gentle_listener"
+    ],
+    "narrator_profile": "The Gentle Mirror",
+    "delivery_format": "text_message",
+    "linked_bots": [
+      "Supporter Guide GPT",
+      "Conversation Helper GPT"
+    ],
+    "recommended_tool": "show_up_tool_01"
+  },
+  "script_030": {
+    "role_profile": "Close Friend",
+    "scenario": "Crisis Moment After Elopement Scare",
+    "tone_tags": [
+      "calm_companion"
+    ],
+    "narrator_profile": "The Compassionate Witness",
+    "delivery_format": "text_message",
+    "linked_bots": [
+      "Supporter Guide GPT",
+      "Conversation Helper GPT"
+    ],
+    "recommended_tool": "show_up_tool_01"
+  },
+  "apex_script_031": {
+    "role_profile": "Teacher",
+    "scenario": "Teacher Unsure How to Handle Disruption in Class",
+    "tone_tags": [
+      "curious",
+      "respectful"
+    ],
+    "narrator_profile": "The Gentle Mirror",
+    "delivery_format": "email",
+    "linked_bots": [
+      "Supporter Guide GPT",
+      "Conversation Helper GPT"
+    ],
+    "recommended_tool": ""
+  },
+  "apex_script_032": {
+    "role_profile": "Neighbor",
+    "scenario": "Neighbor Offers to Watch Siblings for an Hour",
+    "tone_tags": [
+      "helpful",
+      "encouraging"
+    ],
+    "narrator_profile": "The Welcoming Host",
+    "delivery_format": "voice_note",
+    "linked_bots": [
+      "Supporter Guide GPT",
+      "Conversation Helper GPT"
+    ],
+    "recommended_tool": ""
+  },
+  "apex_script_033": {
+    "role_profile": "Friend",
+    "scenario": "Friend Hesitates to Invite Family to Party",
+    "tone_tags": [
+      "supportive",
+      "reassuring"
+    ],
+    "narrator_profile": "The Grounded Ally",
+    "delivery_format": "text_message",
+    "linked_bots": [
+      "Supporter Guide GPT",
+      "Conversation Helper GPT"
+    ],
+    "recommended_tool": ""
+  },
+  "apex_script_034": {
+    "role_profile": "Friend",
+    "scenario": "Parent Confides in Friend About Burnout",
+    "tone_tags": [
+      "validating",
+      "encouraging"
+    ],
+    "narrator_profile": "The Steady Companion",
+    "delivery_format": "text_message",
+    "linked_bots": [
+      "Supporter Guide GPT",
+      "Conversation Helper GPT"
+    ],
+    "recommended_tool": ""
+  },
+  "apex_script_035": {
+    "role_profile": "Coworker",
+    "scenario": "Coworker Wants to Help Without Overstepping",
+    "tone_tags": [
+      "respectful",
+      "helpful"
+    ],
+    "narrator_profile": "The Bridge Builder",
+    "delivery_format": "email",
+    "linked_bots": [
+      "Supporter Guide GPT",
+      "Conversation Helper GPT"
+    ],
+    "recommended_tool": ""
+  },
+  "apex_script_036": {
+    "role_profile": "Sibling",
+    "scenario": "Teen Sibling Feels Forgotten During Crisis",
+    "tone_tags": [
+      "validating",
+      "supportive"
+    ],
+    "narrator_profile": "The Compassionate Witness",
+    "delivery_format": "voice_note",
+    "linked_bots": [
+      "Supporter Guide GPT",
+      "Conversation Helper GPT"
+    ],
+    "recommended_tool": ""
+  },
+  "apex_script_037": {
+    "role_profile": "Parent",
+    "scenario": "Parent Struggling to Navigate Holiday Gatherings",
+    "tone_tags": [
+      "reassuring",
+      "reflective"
+    ],
+    "narrator_profile": "The Grounded Ally",
+    "delivery_format": "email",
+    "linked_bots": [
+      "Supporter Guide GPT",
+      "Conversation Helper GPT"
+    ],
+    "recommended_tool": ""
+  },
+  "apex_script_038": {
+    "role_profile": "Friend",
+    "scenario": "Support Group Member Reaches Out After Tough Day",
+    "tone_tags": [
+      "validating",
+      "encouraging"
+    ],
+    "narrator_profile": "The Joyful Cheerleader",
+    "delivery_format": "text_message",
+    "linked_bots": [
+      "Supporter Guide GPT",
+      "Conversation Helper GPT"
+    ],
+    "recommended_tool": ""
+  },
+  "apex_script_039": {
+    "role_profile": "Friend",
+    "scenario": "Friend Texts During a Meltdown Without Knowing",
+    "tone_tags": [
+      "empathetic",
+      "gentle"
+    ],
+    "narrator_profile": "The Calming Guide",
+    "delivery_format": "text_message",
+    "linked_bots": [
+      "Supporter Guide GPT",
+      "Conversation Helper GPT"
+    ],
+    "recommended_tool": ""
+  },
+  "apex_script_040": {
+    "role_profile": "Faith Leader",
+    "scenario": "Faith Leader Wants to Share a Win with the Congregation",
+    "tone_tags": [
+      "celebratory",
+      "respectful"
+    ],
+    "narrator_profile": "The Joyful Cheerleader",
+    "delivery_format": "printable_card",
+    "linked_bots": [
+      "Supporter Guide GPT",
+      "Conversation Helper GPT"
+    ],
+    "recommended_tool": ""
+  },
+  "apex_script_041": {
+    "role_profile": "Volunteer",
+    "scenario": "Volunteer at Rec Center Unsure About Accommodations",
+    "tone_tags": [
+      "curious",
+      "respectful"
+    ],
+    "narrator_profile": "The Open Explorer",
+    "delivery_format": "voice_note",
+    "linked_bots": [
+      "Supporter Guide GPT",
+      "Conversation Helper GPT"
+    ],
+    "recommended_tool": ""
+  },
+  "apex_script_042": {
+    "role_profile": "Family Member",
+    "scenario": "Family Member Wants to Make Amends for Past Comments",
+    "tone_tags": [
+      "apologetic",
+      "reflective"
+    ],
+    "narrator_profile": "The Calming Guide",
+    "delivery_format": "email",
+    "linked_bots": [
+      "Supporter Guide GPT",
+      "Conversation Helper GPT"
+    ],
+    "recommended_tool": ""
+  },
+  "apex_script_043": {
+    "role_profile": "Therapist",
+    "scenario": "Therapist Wants to Celebrate Progress with Parents",
+    "tone_tags": [
+      "validating",
+      "celebratory"
+    ],
+    "narrator_profile": "The Compassionate Witness",
+    "delivery_format": "email",
+    "linked_bots": [
+      "Supporter Guide GPT",
+      "Conversation Helper GPT"
+    ],
+    "recommended_tool": ""
+  },
+  "apex_script_044": {
+    "role_profile": "Coach",
+    "scenario": "Coach Plans Inclusive Practice After Feedback",
+    "tone_tags": [
+      "helpful",
+      "reflective"
+    ],
+    "narrator_profile": "The Capable Helper",
+    "delivery_format": "email",
+    "linked_bots": [
+      "Supporter Guide GPT",
+      "Conversation Helper GPT"
+    ],
+    "recommended_tool": ""
+  },
+  "apex_script_045": {
+    "role_profile": "Friend",
+    "scenario": "Friend Learns About Autism for the First Time",
+    "tone_tags": [
+      "curious",
+      "respectful"
+    ],
+    "narrator_profile": "The Open Explorer",
+    "delivery_format": "text_message",
+    "linked_bots": [
+      "Supporter Guide GPT",
+      "Conversation Helper GPT"
+    ],
+    "recommended_tool": ""
+  },
+  "apex_script_046": {
+    "role_profile": "Parent",
+    "scenario": "Parent Receives Harsh Public Judgment at Store",
+    "tone_tags": [
+      "validating",
+      "supportive"
+    ],
+    "narrator_profile": "The Grounded Ally",
+    "delivery_format": "voice_note",
+    "linked_bots": [
+      "Supporter Guide GPT",
+      "Conversation Helper GPT"
+    ],
+    "recommended_tool": ""
+  },
+  "apex_script_047": {
+    "role_profile": "Neighbor",
+    "scenario": "Neighbor Offers Help After Emergency Room Visit",
+    "tone_tags": [
+      "supportive",
+      "helpful"
+    ],
+    "narrator_profile": "The Steady Companion",
+    "delivery_format": "text_message",
+    "linked_bots": [
+      "Supporter Guide GPT",
+      "Conversation Helper GPT"
+    ],
+    "recommended_tool": ""
+  },
+  "apex_script_048": {
+    "role_profile": "Grandparent",
+    "scenario": "Grandparent Struggles to Understand Sensory Issues",
+    "tone_tags": [
+      "curious",
+      "respectful"
+    ],
+    "narrator_profile": "The Gentle Mirror",
+    "delivery_format": "email",
+    "linked_bots": [
+      "Supporter Guide GPT",
+      "Conversation Helper GPT"
+    ],
+    "recommended_tool": ""
+  },
+  "apex_script_049": {
+    "role_profile": "Friend",
+    "scenario": "Close Friend Wants to Give a Break but Unsure How",
+    "tone_tags": [
+      "encouraging",
+      "helpful"
+    ],
+    "narrator_profile": "The Capable Helper",
+    "delivery_format": "voice_note",
+    "linked_bots": [
+      "Supporter Guide GPT",
+      "Conversation Helper GPT"
+    ],
+    "recommended_tool": ""
+  },
+  "apex_script_050": {
+    "role_profile": "Coworker",
+    "scenario": "Colleague Notices Increased Absences and Reaches Out",
+    "tone_tags": [
+      "supportive",
+      "respectful"
+    ],
+    "narrator_profile": "The Gentle Mirror",
+    "delivery_format": "email",
+    "linked_bots": [
+      "Supporter Guide GPT",
+      "Conversation Helper GPT"
+    ],
+    "recommended_tool": ""
+  },
+  "script_051": {
+    "role_profile": "Acquaintance",
+    "scenario": "Sending a message on a child\u2019s birthday",
+    "tone_tags": [
+      "cheerful_supporter"
+    ],
+    "narrator_profile": "The Joyful Cheerleader",
+    "delivery_format": "text_message",
+    "linked_bots": [
+      "Supporter Guide GPT"
+    ],
+    "recommended_tool": "celebrate_tool_01"
+  },
+  "script_052": {
+    "role_profile": "Teacher",
+    "scenario": "Noticing progress in a student or classmate and wanting to say something",
+    "tone_tags": [
+      "celebratory"
+    ],
+    "narrator_profile": "The Joyful Cheerleader",
+    "delivery_format": "email",
+    "linked_bots": [
+      "Supporter Guide GPT"
+    ],
+    "recommended_tool": "celebrate_tool_01"
+  },
+  "script_053": {
+    "role_profile": "Stranger",
+    "scenario": "A supporter feels guilty for staying silent during a public meltdown",
+    "tone_tags": [
+      "empathetic"
+    ],
+    "narrator_profile": "The Gentle Mirror",
+    "delivery_format": "text_message",
+    "linked_bots": [
+      "Supporter Guide GPT"
+    ],
+    "recommended_tool": "show_up_tool_01"
+  },
+  "script_054": {
+    "role_profile": "Neighbor",
+    "scenario": "Wanting to provide a meal but unsure how to ask or what they need",
+    "tone_tags": [
+      "grounded_helper"
+    ],
+    "narrator_profile": "The Steady Companion",
+    "delivery_format": "text_message",
+    "linked_bots": [
+      "Supporter Guide GPT"
+    ],
+    "recommended_tool": "offer_help_tool_01"
+  },
+  "script_055": {
+    "role_profile": "Close Friend",
+    "scenario": "Friend wants to reach out after a tough week but doesn\u2019t want to intrude",
+    "tone_tags": [
+      "gentle_listener"
+    ],
+    "narrator_profile": "The Compassionate Witness",
+    "delivery_format": "text_message",
+    "linked_bots": [
+      "Supporter Guide GPT"
+    ],
+    "recommended_tool": "show_up_tool_01"
+  },
+  "script_056": {
+    "role_profile": "Coworker",
+    "scenario": "Coworker overhears someone talking about autism and wants to ask a thoughtful question",
+    "tone_tags": [
+      "curious"
+    ],
+    "narrator_profile": "The Respectful Explorer",
+    "delivery_format": "chat_message",
+    "linked_bots": [
+      "Supporter Guide GPT"
+    ],
+    "recommended_tool": "ask_question_tool_01"
+  },
+  "script_057": {
+    "role_profile": "Volunteer",
+    "scenario": "A new volunteer is meeting an autistic child for the first time",
+    "tone_tags": [
+      "organized_caring"
+    ],
+    "narrator_profile": "The Organized Coach",
+    "delivery_format": "guide",
+    "linked_bots": [
+      "Supporter Guide GPT"
+    ],
+    "recommended_tool": "guide_tool_01"
+  },
+  "script_058": {
+    "role_profile": "Faith Leader",
+    "scenario": "Faith leader wants to honor a child\u2019s milestone in a service",
+    "tone_tags": [
+      "bridge_builder"
+    ],
+    "narrator_profile": "The Calming Guide",
+    "delivery_format": "printable_card",
+    "linked_bots": [
+      "Supporter Guide GPT"
+    ],
+    "recommended_tool": "celebrate_tool_01"
+  },
+  "script_059": {
+    "role_profile": "Coach",
+    "scenario": "Coach accidentally misreads a behavior and wants to repair the moment",
+    "tone_tags": [
+      "respectful"
+    ],
+    "narrator_profile": "The Gentle Mirror",
+    "delivery_format": "email",
+    "linked_bots": [
+      "Supporter Guide GPT"
+    ],
+    "recommended_tool": "repair_tool_01"
+  },
+  "script_060": {
+    "role_profile": "Teacher",
+    "scenario": "Teacher wants to check in via email with a parent after noticing a tough day",
+    "tone_tags": [
+      "organized_caring"
+    ],
+    "narrator_profile": "The Steady Companion",
+    "delivery_format": "email",
+    "linked_bots": [
+      "Supporter Guide GPT"
+    ],
+    "recommended_tool": "show_up_tool_01"
+  },
+  "script_061": {
+    "role_profile": "Neighbor",
+    "scenario": "Neighbor meets an autistic child for the first time and wants to be kind",
+    "tone_tags": [
+      "cheerful_supporter"
+    ],
+    "narrator_profile": "The Joyful Cheerleader",
+    "delivery_format": "in_person",
+    "linked_bots": [
+      "Supporter Guide GPT"
+    ],
+    "recommended_tool": "show_up_tool_01"
+  },
+  "script_062": {
+    "role_profile": "Grandparent",
+    "scenario": "Grandparent gave unsolicited advice and wants to repair the relationship",
+    "tone_tags": [
+      "apologetic"
+    ],
+    "narrator_profile": "The Gentle Mirror",
+    "delivery_format": "printable_card",
+    "linked_bots": [
+      "Supporter Guide GPT"
+    ],
+    "recommended_tool": "repair_tool_01"
+  },
+  "script_063": {
+    "role_profile": "Friend",
+    "scenario": "Friend sees a Be Ausome post and wants to share it with kind words",
+    "tone_tags": [
+      "cheerful_supporter"
+    ],
+    "narrator_profile": "The Joyful Cheerleader",
+    "delivery_format": "social_media_post",
+    "linked_bots": [
+      "Supporter Guide GPT"
+    ],
+    "recommended_tool": "celebrate_tool_01"
+  },
+  "script_064": {
+    "role_profile": "Coworker",
+    "scenario": "Coworker gently asks about autism over a lunch break",
+    "tone_tags": [
+      "curious"
+    ],
+    "narrator_profile": "The Respectful Explorer",
+    "delivery_format": "in_person",
+    "linked_bots": [
+      "Supporter Guide GPT"
+    ],
+    "recommended_tool": "ask_question_tool_01"
+  },
+  "script_065": {
+    "role_profile": "Volunteer",
+    "scenario": "Volunteer feels they misunderstood a situation and want to do better",
+    "tone_tags": [
+      "grounded_ally"
+    ],
+    "narrator_profile": "The Steady Companion",
+    "delivery_format": "text_message",
+    "linked_bots": [
+      "Supporter Guide GPT"
+    ],
+    "recommended_tool": "repair_tool_01"
+  },
+  "script_066": {
+    "role_profile": "Distant Relative",
+    "scenario": "A distant relative reaches out after hearing about a diagnosis and wants to reconnect.",
+    "tone_tags": [
+      "bridge_builder"
+    ],
+    "narrator_profile": "The Calming Guide",
+    "delivery_format": "email",
+    "linked_bots": [
+      "Supporter Guide GPT"
+    ],
+    "recommended_tool": "show_up_tool_01"
+  },
+  "script_067": {
+    "role_profile": "Parent",
+    "scenario": "Parent of a classmate reaches out after a difficult school interaction.",
+    "tone_tags": [
+      "steady_support"
+    ],
+    "narrator_profile": "The Compassionate Witness",
+    "delivery_format": "text_message",
+    "linked_bots": [
+      "Supporter Guide GPT"
+    ],
+    "recommended_tool": "show_up_tool_01"
+  },
+  "script_068": {
+    "role_profile": "Coach",
+    "scenario": "Coach wants help modifying a group activity to include an autistic player better.",
+    "tone_tags": [
+      "organized_caring"
+    ],
+    "narrator_profile": "The Organized Coach",
+    "delivery_format": "guide",
+    "linked_bots": [
+      "Supporter Guide GPT"
+    ],
+    "recommended_tool": "offer_help_tool_01"
+  },
+  "script_069": {
+    "role_profile": "Neighbor",
+    "scenario": "Neighbor realizes their comment about 'fixing autism' was hurtful and wants to apologize.",
+    "tone_tags": [
+      "apologetic"
+    ],
+    "narrator_profile": "The Gentle Mirror",
+    "delivery_format": "text_message",
+    "linked_bots": [
+      "Supporter Guide GPT"
+    ],
+    "recommended_tool": "repair_tool_01"
+  },
+  "script_070": {
+    "role_profile": "Sibling",
+    "scenario": "Sibling of an autistic child shares a win or milestone with their friend.",
+    "tone_tags": [
+      "celebratory"
+    ],
+    "narrator_profile": "The Joyful Cheerleader",
+    "delivery_format": "text_message",
+    "linked_bots": [
+      "Supporter Guide GPT"
+    ],
+    "recommended_tool": "celebrate_tool_01"
+  },
+  "script_071": {
+    "role_profile": "Friend",
+    "scenario": "Friend invites the whole family to a gathering and wants it to feel safe.",
+    "tone_tags": [
+      "inclusive"
+    ],
+    "narrator_profile": "The Bridge Builder",
+    "delivery_format": "text_message",
+    "linked_bots": [
+      "Supporter Guide GPT"
+    ],
+    "recommended_tool": "offer_help_tool_01"
+  },
+  "script_072": {
+    "role_profile": "Teacher",
+    "scenario": "Teacher is unsure if a new behavior is sensory or defiance and wants to learn.",
+    "tone_tags": [
+      "curious"
+    ],
+    "narrator_profile": "The Respectful Explorer",
+    "delivery_format": "email",
+    "linked_bots": [
+      "Supporter Guide GPT"
+    ],
+    "recommended_tool": "ask_question_tool_01"
+  },
+  "script_073": {
+    "role_profile": "Volunteer",
+    "scenario": "Volunteer helps during a loud, chaotic transition and wants affirmation.",
+    "tone_tags": [
+      "validating"
+    ],
+    "narrator_profile": "The Steady Companion",
+    "delivery_format": "text_message",
+    "linked_bots": [
+      "Supporter Guide GPT"
+    ],
+    "recommended_tool": "celebrate_tool_01"
+  },
+  "script_074": {
+    "role_profile": "Boss or Manager",
+    "scenario": "Manager misinterprets a behavior at work and wants to learn more.",
+    "tone_tags": [
+      "respectful"
+    ],
+    "narrator_profile": "The Calming Guide",
+    "delivery_format": "email",
+    "linked_bots": [
+      "Supporter Guide GPT"
+    ],
+    "recommended_tool": "ask_question_tool_01"
+  },
+  "script_075": {
+    "role_profile": "Coworker",
+    "scenario": "Coworker wants to invite a colleague\u2019s child to an event and isn\u2019t sure how.",
+    "tone_tags": [
+      "inclusive"
+    ],
+    "narrator_profile": "The Bridge Builder",
+    "delivery_format": "email",
+    "linked_bots": [
+      "Supporter Guide GPT"
+    ],
+    "recommended_tool": "offer_help_tool_01"
+  },
+  "script_076": {
+    "role_profile": "Faith Leader",
+    "scenario": "Faith leader wants to know how to make a service more accessible.",
+    "tone_tags": [
+      "organized_caring"
+    ],
+    "narrator_profile": "The Organized Coach",
+    "delivery_format": "email",
+    "linked_bots": [
+      "Supporter Guide GPT"
+    ],
+    "recommended_tool": "ask_question_tool_01"
+  },
+  "script_077": {
+    "role_profile": "Friend",
+    "scenario": "New friend was confused by a child\u2019s reaction and wants help understanding.",
+    "tone_tags": [
+      "gentle_listener"
+    ],
+    "narrator_profile": "The Compassionate Witness",
+    "delivery_format": "text_message",
+    "linked_bots": [
+      "Supporter Guide GPT"
+    ],
+    "recommended_tool": "ask_question_tool_01"
+  },
+  "script_078": {
+    "role_profile": "Teacher",
+    "scenario": "Teacher noticed a sibling helping and wants to thank them meaningfully.",
+    "tone_tags": [
+      "celebratory"
+    ],
+    "narrator_profile": "The Joyful Cheerleader",
+    "delivery_format": "email",
+    "linked_bots": [
+      "Supporter Guide GPT"
+    ],
+    "recommended_tool": "celebrate_tool_01"
+  },
+  "script_079": {
+    "role_profile": "Therapist",
+    "scenario": "Therapist wants to ask about family dynamics but isn\u2019t sure how.",
+    "tone_tags": [
+      "gentle_listener"
+    ],
+    "narrator_profile": "The Compassionate Witness",
+    "delivery_format": "email",
+    "linked_bots": [
+      "Supporter Guide GPT"
+    ],
+    "recommended_tool": "ask_question_tool_01"
+  },
+  "script_080": {
+    "role_profile": "Community Member",
+    "scenario": "A community member saw a tough moment in public and wants to share a kind post.",
+    "tone_tags": [
+      "cheerful_supporter"
+    ],
+    "narrator_profile": "The Joyful Cheerleader",
+    "delivery_format": "social_media_post",
+    "linked_bots": [
+      "Supporter Guide GPT"
+    ],
+    "recommended_tool": "show_up_tool_01"
+  },
+
+"script_999": {
+  "script_id": "build_support_kit_script",
+  "role_profile": "General",
+  "scenario": "User wants to create a personalized support kit",
+  "tone_tags": ["supportive"],
+  "narrator_profile": "The Capable Helper",
+  "delivery_format": "text_message",
+  "linked_bots": [
+    "Supporter Guide GPT"
+  ],
+  "recommended_tool": "toolkit_fallback_reminder",
+  "extra_tags": ["kit_builder", "multi_tool", "conversation"]
+}
+}
+

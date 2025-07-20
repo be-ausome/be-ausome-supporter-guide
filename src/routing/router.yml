@@ -1,0 +1,29 @@
+name: Build Router (Flat)
+
+on:
+  push:
+    paths:
+      - "*.txt"
+      - compile_router_fixed.py
+      - merge_router.py
+
+jobs:
+  build-router:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Refresh lean router
+        run: python compile_router_fixed.py .
+
+      - name: Merge into rich router
+        run: python merge_router.py
+
+      - name: Lint final router
+        run: |
+          python script_id_linter.py . --router supporter_tone_router_master.json

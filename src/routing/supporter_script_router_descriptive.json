@@ -1,0 +1,982 @@
+[
+  {
+    "scenario_tag": "scenario_01",
+    "description": "Upgraded router entry for scenario 1",
+    "priority": "high",
+    "linked_script": "overwhelmed_parent_after_public_meltdown.txt",
+    "fallback_script": "gentle_repair_1.txt",
+    "script_style": "validation_loop",
+    "fallback_tone": "Tone_Type_1",
+    "tone_compatibility_score": 0.84,
+    "preferred_persona": "The Gentle Mirror",
+    "fallback_persona_chain": [
+      "The Anchor",
+      "The Encourager"
+    ],
+    "emotion_tags": [
+      "burnout",
+      "overwhelm"
+    ],
+    "sensitivity_score": 5,
+    "requires_consent": false,
+    "tone_repair_fallback": "supporter_tone_fallback.txt",
+    "routing_notes": "Scenario 1 requires care in delivery and tone",
+    "skill_level_required": "intermediate",
+    "format_tags": [
+      "\ud83d\udc40 visual"
+    ],
+    "environment_tag": "private_space",
+    "predicted_emotion_arc": [
+      "overwhelm",
+      "burnout",
+      "fear"
+    ],
+    "next_steps": [
+      "how_to_be_present.txt",
+      "follow_up_checkin.txt"
+    ],
+    "trust_impact": "high",
+    "preload_prompt": "This moment needs curiosity more than answers."
+  },
+  {
+    "scenario_tag": "scenario_02",
+    "description": "Upgraded router entry for scenario 2",
+    "priority": "high",
+    "linked_script": "diagnosis_shock_just_found_out.txt",
+    "fallback_script": "gentle_repair_2.txt",
+    "script_style": "validation_loop",
+    "fallback_tone": "Tone_Type_2",
+    "tone_compatibility_score": 0.59,
+    "preferred_persona": "The Bridge",
+    "fallback_persona_chain": [
+      "The Bridge",
+      "The Gentle Mirror"
+    ],
+    "emotion_tags": [
+      "guilt",
+      "uncertainty"
+    ],
+    "sensitivity_score": 3,
+    "requires_consent": false,
+    "tone_repair_fallback": "supporter_tone_fallback.txt",
+    "routing_notes": "Scenario 2 requires care in delivery and tone",
+    "skill_level_required": "intermediate",
+    "format_tags": [
+      "\ud83e\udde0 step-by-step"
+    ],
+    "environment_tag": "school_setting",
+    "predicted_emotion_arc": [
+      "overwhelm",
+      "resentment",
+      "uncertainty"
+    ],
+    "next_steps": [
+      "offer_space.txt",
+      "follow_up_checkin.txt"
+    ],
+    "trust_impact": "high",
+    "preload_prompt": "This moment needs gentle encouragement more than answers."
+  },
+  {
+    "scenario_tag": "scenario_03",
+    "description": "Upgraded router entry for scenario 3",
+    "priority": "high",
+    "linked_script": "sibling_feeling_left_out_during_therapy_focus.txt",
+    "fallback_script": "gentle_repair_3.txt",
+    "script_style": "emotional_reframe",
+    "fallback_tone": "Tone_Type_3",
+    "tone_compatibility_score": 0.76,
+    "preferred_persona": "The Bridge",
+    "fallback_persona_chain": [
+      "The Listener",
+      "The Anchor"
+    ],
+    "emotion_tags": [
+      "burnout",
+      "fear"
+    ],
+    "sensitivity_score": 5,
+    "requires_consent": false,
+    "tone_repair_fallback": "supporter_tone_fallback.txt",
+    "routing_notes": "Scenario 3 requires care in delivery and tone",
+    "skill_level_required": "advanced",
+    "format_tags": [
+      "\ud83e\udde0 step-by-step"
+    ],
+    "environment_tag": "private_space",
+    "predicted_emotion_arc": [
+      "fear",
+      "hope",
+      "overwhelm"
+    ],
+    "next_steps": [
+      "follow_up_checkin.txt",
+      "how_to_be_present.txt"
+    ],
+    "trust_impact": "low",
+    "preload_prompt": "This moment needs curiosity more than answers."
+  },
+  {
+    "scenario_tag": "scenario_04",
+    "description": "Upgraded router entry for scenario 4",
+    "priority": "high",
+    "linked_script": "financial_stress_around_therapy_costs.txt",
+    "fallback_script": "gentle_repair_4.txt",
+    "script_style": "emotional_reframe",
+    "fallback_tone": "Tone_Type_4",
+    "tone_compatibility_score": 0.91,
+    "preferred_persona": "The Encourager",
+    "fallback_persona_chain": [
+      "The Gentle Mirror",
+      "The Bridge"
+    ],
+    "emotion_tags": [
+      "guilt",
+      "uncertainty"
+    ],
+    "sensitivity_score": 4,
+    "requires_consent": false,
+    "tone_repair_fallback": "supporter_tone_fallback.txt",
+    "routing_notes": "Scenario 4 requires care in delivery and tone",
+    "skill_level_required": "intermediate",
+    "format_tags": [
+      "\ud83e\udde0 step-by-step",
+      "\ud83d\udc40 visual"
+    ],
+    "environment_tag": "school_setting",
+    "predicted_emotion_arc": [
+      "hope",
+      "fear",
+      "resentment"
+    ],
+    "next_steps": [
+      "offer_space.txt",
+      "listen_deeply.txt"
+    ],
+    "trust_impact": "low",
+    "preload_prompt": "This moment needs curiosity more than answers."
+  },
+  {
+    "scenario_tag": "scenario_05",
+    "description": "Upgraded router entry for scenario 5",
+    "priority": "high",
+    "linked_script": "faith_leader_offering_help_without_pressure.txt",
+    "fallback_script": "gentle_repair_5.txt",
+    "script_style": "emotional_reframe",
+    "fallback_tone": "Tone_Type_5",
+    "tone_compatibility_score": 0.8,
+    "preferred_persona": "The Gentle Mirror",
+    "fallback_persona_chain": [
+      "The Anchor",
+      "The Gentle Mirror"
+    ],
+    "emotion_tags": [
+      "fear",
+      "hope"
+    ],
+    "sensitivity_score": 2,
+    "requires_consent": true,
+    "tone_repair_fallback": "supporter_tone_fallback.txt",
+    "routing_notes": "Scenario 5 requires care in delivery and tone",
+    "skill_level_required": "beginner",
+    "format_tags": [
+      "\ud83d\udcac conversational"
+    ],
+    "environment_tag": "private_space",
+    "predicted_emotion_arc": [
+      "burnout",
+      "uncertainty",
+      "grief"
+    ],
+    "next_steps": [
+      "follow_up_checkin.txt",
+      "listen_deeply.txt"
+    ],
+    "trust_impact": "moderate",
+    "preload_prompt": "This moment needs quiet presence more than answers."
+  },
+  {
+    "scenario_tag": "scenario_06",
+    "description": "Upgraded router entry for scenario 6",
+    "priority": "high",
+    "linked_script": "coach_noticing_child_excluded_during_practice.txt",
+    "fallback_script": "gentle_repair_6.txt",
+    "script_style": "emotional_reframe",
+    "fallback_tone": "Tone_Type_6",
+    "tone_compatibility_score": 0.62,
+    "preferred_persona": "The Listener",
+    "fallback_persona_chain": [
+      "The Anchor",
+      "The Bridge"
+    ],
+    "emotion_tags": [
+      "guilt",
+      "grief"
+    ],
+    "sensitivity_score": 5,
+    "requires_consent": false,
+    "tone_repair_fallback": "supporter_tone_fallback.txt",
+    "routing_notes": "Scenario 6 requires care in delivery and tone",
+    "skill_level_required": "intermediate",
+    "format_tags": [
+      "\ud83e\udde0 step-by-step"
+    ],
+    "environment_tag": "public_moment",
+    "predicted_emotion_arc": [
+      "grief",
+      "resentment",
+      "uncertainty"
+    ],
+    "next_steps": [
+      "offer_space.txt",
+      "follow_up_checkin.txt"
+    ],
+    "trust_impact": "low",
+    "preload_prompt": "This moment needs gentle encouragement more than answers."
+  },
+  {
+    "scenario_tag": "scenario_07",
+    "description": "Upgraded router entry for scenario 7",
+    "priority": "high",
+    "linked_script": "teacher_confused_by_behavior_during_class.txt",
+    "fallback_script": "gentle_repair_7.txt",
+    "script_style": "checklist",
+    "fallback_tone": "Tone_Type_7",
+    "tone_compatibility_score": 0.86,
+    "preferred_persona": "The Gentle Mirror",
+    "fallback_persona_chain": [
+      "The Anchor",
+      "The Encourager"
+    ],
+    "emotion_tags": [
+      "guilt",
+      "hope"
+    ],
+    "sensitivity_score": 2,
+    "requires_consent": false,
+    "tone_repair_fallback": "supporter_tone_fallback.txt",
+    "routing_notes": "Scenario 7 requires care in delivery and tone",
+    "skill_level_required": "advanced",
+    "format_tags": [
+      "\ud83e\udde0 step-by-step",
+      "\ud83d\udc40 visual"
+    ],
+    "environment_tag": "online_interaction",
+    "predicted_emotion_arc": [
+      "overwhelm",
+      "resentment",
+      "grief"
+    ],
+    "next_steps": [
+      "follow_up_checkin.txt",
+      "how_to_be_present.txt"
+    ],
+    "trust_impact": "high",
+    "preload_prompt": "This moment needs quiet presence more than answers."
+  },
+  {
+    "scenario_tag": "scenario_08",
+    "description": "Upgraded router entry for scenario 8",
+    "priority": "high",
+    "linked_script": "neighbor_wants_to_help_but_doesn_t_know_how.txt",
+    "fallback_script": "gentle_repair_8.txt",
+    "script_style": "emotional_reframe",
+    "fallback_tone": "Tone_Type_8",
+    "tone_compatibility_score": 0.92,
+    "preferred_persona": "The Encourager",
+    "fallback_persona_chain": [
+      "The Gentle Mirror",
+      "The Encourager"
+    ],
+    "emotion_tags": [
+      "fear",
+      "burnout"
+    ],
+    "sensitivity_score": 5,
+    "requires_consent": false,
+    "tone_repair_fallback": "supporter_tone_fallback.txt",
+    "routing_notes": "Scenario 8 requires care in delivery and tone",
+    "skill_level_required": "intermediate",
+    "format_tags": [
+      "\ud83d\udc40 visual"
+    ],
+    "environment_tag": "private_space",
+    "predicted_emotion_arc": [
+      "hope",
+      "burnout",
+      "fear"
+    ],
+    "next_steps": [
+      "listen_deeply.txt",
+      "offer_space.txt"
+    ],
+    "trust_impact": "moderate",
+    "preload_prompt": "This moment needs quiet presence more than answers."
+  },
+  {
+    "scenario_tag": "scenario_09",
+    "description": "Upgraded router entry for scenario 9",
+    "priority": "high",
+    "linked_script": "siblings_fighting_about_autism_related_routines.txt",
+    "fallback_script": "gentle_repair_9.txt",
+    "script_style": "validation_loop",
+    "fallback_tone": "Tone_Type_9",
+    "tone_compatibility_score": 0.57,
+    "preferred_persona": "The Encourager",
+    "fallback_persona_chain": [
+      "The Bridge",
+      "The Listener"
+    ],
+    "emotion_tags": [
+      "overwhelm",
+      "grief"
+    ],
+    "sensitivity_score": 5,
+    "requires_consent": false,
+    "tone_repair_fallback": "supporter_tone_fallback.txt",
+    "routing_notes": "Scenario 9 requires care in delivery and tone",
+    "skill_level_required": "advanced",
+    "format_tags": [
+      "\ud83e\udde0 step-by-step",
+      "\ud83d\udc40 visual"
+    ],
+    "environment_tag": "public_moment",
+    "predicted_emotion_arc": [
+      "overwhelm",
+      "hope",
+      "resentment"
+    ],
+    "next_steps": [
+      "follow_up_checkin.txt",
+      "listen_deeply.txt"
+    ],
+    "trust_impact": "low",
+    "preload_prompt": "This moment needs gentle encouragement more than answers."
+  },
+  {
+    "scenario_tag": "scenario_10",
+    "description": "Upgraded router entry for scenario 10",
+    "priority": "high",
+    "linked_script": "friend_wants_to_celebrate_a_quiet_milestone.txt",
+    "fallback_script": "gentle_repair_10.txt",
+    "script_style": "checklist",
+    "fallback_tone": "Tone_Type_10",
+    "tone_compatibility_score": 0.59,
+    "preferred_persona": "The Listener",
+    "fallback_persona_chain": [
+      "The Encourager",
+      "The Gentle Mirror"
+    ],
+    "emotion_tags": [
+      "guilt",
+      "hope"
+    ],
+    "sensitivity_score": 3,
+    "requires_consent": true,
+    "tone_repair_fallback": "supporter_tone_fallback.txt",
+    "routing_notes": "Scenario 10 requires care in delivery and tone",
+    "skill_level_required": "advanced",
+    "format_tags": [
+      "\ud83e\udde0 step-by-step",
+      "\ud83d\udc40 visual"
+    ],
+    "environment_tag": "private_space",
+    "predicted_emotion_arc": [
+      "burnout",
+      "overwhelm",
+      "fear"
+    ],
+    "next_steps": [
+      "follow_up_checkin.txt",
+      "offer_space.txt"
+    ],
+    "trust_impact": "moderate",
+    "preload_prompt": "This moment needs gentle encouragement more than answers."
+  },
+  {
+    "scenario_tag": "scenario_11",
+    "description": "Upgraded router entry for scenario 11",
+    "priority": "normal",
+    "linked_script": "therapist_reporting_no_progress_to_a_tired_parent.txt",
+    "fallback_script": "gentle_repair_11.txt",
+    "script_style": "checklist",
+    "fallback_tone": "Tone_Type_11",
+    "tone_compatibility_score": 0.7,
+    "preferred_persona": "The Bridge",
+    "fallback_persona_chain": [
+      "The Gentle Mirror",
+      "The Listener"
+    ],
+    "emotion_tags": [
+      "burnout",
+      "resentment"
+    ],
+    "sensitivity_score": 3,
+    "requires_consent": false,
+    "tone_repair_fallback": "supporter_tone_fallback.txt",
+    "routing_notes": "Scenario 11 requires care in delivery and tone",
+    "skill_level_required": "beginner",
+    "format_tags": [
+      "\ud83d\udcac conversational"
+    ],
+    "environment_tag": "private_space",
+    "predicted_emotion_arc": [
+      "overwhelm",
+      "hope",
+      "resentment"
+    ],
+    "next_steps": [
+      "listen_deeply.txt",
+      "how_to_be_present.txt"
+    ],
+    "trust_impact": "low",
+    "preload_prompt": "This moment needs gentle encouragement more than answers."
+  },
+  {
+    "scenario_tag": "scenario_12",
+    "description": "Upgraded router entry for scenario 12",
+    "priority": "normal",
+    "linked_script": "babysitter_handling_sensory_overload_while_helping.txt",
+    "fallback_script": "gentle_repair_12.txt",
+    "script_style": "emotional_reframe",
+    "fallback_tone": "Tone_Type_12",
+    "tone_compatibility_score": 0.66,
+    "preferred_persona": "The Anchor",
+    "fallback_persona_chain": [
+      "The Bridge",
+      "The Gentle Mirror"
+    ],
+    "emotion_tags": [
+      "overwhelm",
+      "hope"
+    ],
+    "sensitivity_score": 5,
+    "requires_consent": false,
+    "tone_repair_fallback": "supporter_tone_fallback.txt",
+    "routing_notes": "Scenario 12 requires care in delivery and tone",
+    "skill_level_required": "intermediate",
+    "format_tags": [
+      "\ud83e\udde0 step-by-step"
+    ],
+    "environment_tag": "public_moment",
+    "predicted_emotion_arc": [
+      "resentment",
+      "fear",
+      "grief"
+    ],
+    "next_steps": [
+      "how_to_be_present.txt",
+      "offer_space.txt"
+    ],
+    "trust_impact": "moderate",
+    "preload_prompt": "This moment needs quiet presence more than answers."
+  },
+  {
+    "scenario_tag": "scenario_13",
+    "description": "Upgraded router entry for scenario 13",
+    "priority": "normal",
+    "linked_script": "unfamiliar_relative_attending_holiday_gathering.txt",
+    "fallback_script": "gentle_repair_13.txt",
+    "script_style": "emotional_reframe",
+    "fallback_tone": "Tone_Type_13",
+    "tone_compatibility_score": 0.86,
+    "preferred_persona": "The Encourager",
+    "fallback_persona_chain": [
+      "The Gentle Mirror",
+      "The Anchor"
+    ],
+    "emotion_tags": [
+      "burnout",
+      "grief"
+    ],
+    "sensitivity_score": 5,
+    "requires_consent": false,
+    "tone_repair_fallback": "supporter_tone_fallback.txt",
+    "routing_notes": "Scenario 13 requires care in delivery and tone",
+    "skill_level_required": "intermediate",
+    "format_tags": [
+      "\ud83d\udc40 visual"
+    ],
+    "environment_tag": "private_space",
+    "predicted_emotion_arc": [
+      "guilt",
+      "uncertainty",
+      "grief"
+    ],
+    "next_steps": [
+      "follow_up_checkin.txt",
+      "offer_space.txt"
+    ],
+    "trust_impact": "high",
+    "preload_prompt": "This moment needs gentle encouragement more than answers."
+  },
+  {
+    "scenario_tag": "scenario_14",
+    "description": "Upgraded router entry for scenario 14",
+    "priority": "normal",
+    "linked_script": "parent_receiving_hard_iep_feedback.txt",
+    "fallback_script": "gentle_repair_14.txt",
+    "script_style": "checklist",
+    "fallback_tone": "Tone_Type_14",
+    "tone_compatibility_score": 0.87,
+    "preferred_persona": "The Encourager",
+    "fallback_persona_chain": [
+      "The Bridge",
+      "The Listener"
+    ],
+    "emotion_tags": [
+      "resentment",
+      "overwhelm"
+    ],
+    "sensitivity_score": 4,
+    "requires_consent": false,
+    "tone_repair_fallback": "supporter_tone_fallback.txt",
+    "routing_notes": "Scenario 14 requires care in delivery and tone",
+    "skill_level_required": "beginner",
+    "format_tags": [
+      "\ud83e\udde0 step-by-step",
+      "\ud83d\udc40 visual"
+    ],
+    "environment_tag": "public_moment",
+    "predicted_emotion_arc": [
+      "hope",
+      "resentment",
+      "fear"
+    ],
+    "next_steps": [
+      "how_to_be_present.txt",
+      "follow_up_checkin.txt"
+    ],
+    "trust_impact": "moderate",
+    "preload_prompt": "This moment needs gentle encouragement more than answers."
+  },
+  {
+    "scenario_tag": "scenario_15",
+    "description": "Upgraded router entry for scenario 15",
+    "priority": "normal",
+    "linked_script": "co_parent_conflict_around_routine_consistency.txt",
+    "fallback_script": "gentle_repair_15.txt",
+    "script_style": "validation_loop",
+    "fallback_tone": "Tone_Type_15",
+    "tone_compatibility_score": 0.87,
+    "preferred_persona": "The Bridge",
+    "fallback_persona_chain": [
+      "The Bridge",
+      "The Listener"
+    ],
+    "emotion_tags": [
+      "burnout",
+      "fear"
+    ],
+    "sensitivity_score": 4,
+    "requires_consent": true,
+    "tone_repair_fallback": "supporter_tone_fallback.txt",
+    "routing_notes": "Scenario 15 requires care in delivery and tone",
+    "skill_level_required": "intermediate",
+    "format_tags": [
+      "\ud83d\udc40 visual"
+    ],
+    "environment_tag": "private_space",
+    "predicted_emotion_arc": [
+      "resentment",
+      "grief",
+      "overwhelm"
+    ],
+    "next_steps": [
+      "offer_space.txt",
+      "follow_up_checkin.txt"
+    ],
+    "trust_impact": "high",
+    "preload_prompt": "This moment needs gentle encouragement more than answers."
+  },
+  {
+    "scenario_tag": "scenario_16",
+    "description": "Upgraded router entry for scenario 16",
+    "priority": "normal",
+    "linked_script": "online_ally_reacting_to_vulnerable_social_post.txt",
+    "fallback_script": "gentle_repair_16.txt",
+    "script_style": "emotional_reframe",
+    "fallback_tone": "Tone_Type_16",
+    "tone_compatibility_score": 0.68,
+    "preferred_persona": "The Bridge",
+    "fallback_persona_chain": [
+      "The Bridge",
+      "The Gentle Mirror"
+    ],
+    "emotion_tags": [
+      "hope",
+      "overwhelm"
+    ],
+    "sensitivity_score": 4,
+    "requires_consent": false,
+    "tone_repair_fallback": "supporter_tone_fallback.txt",
+    "routing_notes": "Scenario 16 requires care in delivery and tone",
+    "skill_level_required": "beginner",
+    "format_tags": [
+      "\ud83d\udc40 visual"
+    ],
+    "environment_tag": "public_moment",
+    "predicted_emotion_arc": [
+      "uncertainty",
+      "fear",
+      "resentment"
+    ],
+    "next_steps": [
+      "follow_up_checkin.txt",
+      "how_to_be_present.txt"
+    ],
+    "trust_impact": "high",
+    "preload_prompt": "This moment needs quiet presence more than answers."
+  },
+  {
+    "scenario_tag": "scenario_17",
+    "description": "Upgraded router entry for scenario 17",
+    "priority": "normal",
+    "linked_script": "late_night_message_after_a_hard_day.txt",
+    "fallback_script": "gentle_repair_17.txt",
+    "script_style": "emotional_reframe",
+    "fallback_tone": "Tone_Type_17",
+    "tone_compatibility_score": 0.9,
+    "preferred_persona": "The Gentle Mirror",
+    "fallback_persona_chain": [
+      "The Listener",
+      "The Bridge"
+    ],
+    "emotion_tags": [
+      "burnout",
+      "uncertainty"
+    ],
+    "sensitivity_score": 4,
+    "requires_consent": false,
+    "tone_repair_fallback": "supporter_tone_fallback.txt",
+    "routing_notes": "Scenario 17 requires care in delivery and tone",
+    "skill_level_required": "advanced",
+    "format_tags": [
+      "\ud83d\udcac conversational"
+    ],
+    "environment_tag": "online_interaction",
+    "predicted_emotion_arc": [
+      "uncertainty",
+      "guilt",
+      "fear"
+    ],
+    "next_steps": [
+      "offer_space.txt",
+      "follow_up_checkin.txt"
+    ],
+    "trust_impact": "low",
+    "preload_prompt": "This moment needs curiosity more than answers."
+  },
+  {
+    "scenario_tag": "scenario_18",
+    "description": "Upgraded router entry for scenario 18",
+    "priority": "normal",
+    "linked_script": "community_leader_planning_an_inclusive_event.txt",
+    "fallback_script": "gentle_repair_18.txt",
+    "script_style": "checklist",
+    "fallback_tone": "Tone_Type_18",
+    "tone_compatibility_score": 0.93,
+    "preferred_persona": "The Anchor",
+    "fallback_persona_chain": [
+      "The Bridge",
+      "The Encourager"
+    ],
+    "emotion_tags": [
+      "hope",
+      "fear"
+    ],
+    "sensitivity_score": 4,
+    "requires_consent": false,
+    "tone_repair_fallback": "supporter_tone_fallback.txt",
+    "routing_notes": "Scenario 18 requires care in delivery and tone",
+    "skill_level_required": "beginner",
+    "format_tags": [
+      "\ud83e\udde0 step-by-step"
+    ],
+    "environment_tag": "school_setting",
+    "predicted_emotion_arc": [
+      "fear",
+      "resentment",
+      "guilt"
+    ],
+    "next_steps": [
+      "listen_deeply.txt",
+      "offer_space.txt"
+    ],
+    "trust_impact": "moderate",
+    "preload_prompt": "This moment needs gentle encouragement more than answers."
+  },
+  {
+    "scenario_tag": "scenario_19",
+    "description": "Upgraded router entry for scenario 19",
+    "priority": "normal",
+    "linked_script": "friend_bringing_meal_after_a_rough_week.txt",
+    "fallback_script": "gentle_repair_19.txt",
+    "script_style": "validation_loop",
+    "fallback_tone": "Tone_Type_19",
+    "tone_compatibility_score": 0.94,
+    "preferred_persona": "The Gentle Mirror",
+    "fallback_persona_chain": [
+      "The Listener",
+      "The Encourager"
+    ],
+    "emotion_tags": [
+      "guilt",
+      "overwhelm"
+    ],
+    "sensitivity_score": 3,
+    "requires_consent": false,
+    "tone_repair_fallback": "supporter_tone_fallback.txt",
+    "routing_notes": "Scenario 19 requires care in delivery and tone",
+    "skill_level_required": "advanced",
+    "format_tags": [
+      "\ud83d\udc40 visual"
+    ],
+    "environment_tag": "online_interaction",
+    "predicted_emotion_arc": [
+      "resentment",
+      "grief",
+      "hope"
+    ],
+    "next_steps": [
+      "offer_space.txt",
+      "how_to_be_present.txt"
+    ],
+    "trust_impact": "high",
+    "preload_prompt": "This moment needs gentle encouragement more than answers."
+  },
+  {
+    "scenario_tag": "scenario_20",
+    "description": "Upgraded router entry for scenario 20",
+    "priority": "normal",
+    "linked_script": "child_s_birthday_feels_emotionally_complex.txt",
+    "fallback_script": "gentle_repair_20.txt",
+    "script_style": "validation_loop",
+    "fallback_tone": "Tone_Type_20",
+    "tone_compatibility_score": 0.7,
+    "preferred_persona": "The Anchor",
+    "fallback_persona_chain": [
+      "The Listener",
+      "The Encourager"
+    ],
+    "emotion_tags": [
+      "hope",
+      "burnout"
+    ],
+    "sensitivity_score": 4,
+    "requires_consent": true,
+    "tone_repair_fallback": "supporter_tone_fallback.txt",
+    "routing_notes": "Scenario 20 requires care in delivery and tone",
+    "skill_level_required": "advanced",
+    "format_tags": [
+      "\ud83d\udc40 visual"
+    ],
+    "environment_tag": "private_space",
+    "predicted_emotion_arc": [
+      "hope",
+      "overwhelm",
+      "burnout"
+    ],
+    "next_steps": [
+      "listen_deeply.txt",
+      "offer_space.txt"
+    ],
+    "trust_impact": "moderate",
+    "preload_prompt": "This moment needs curiosity more than answers."
+  },
+  {
+    "scenario_tag": "scenario_21",
+    "description": "Upgraded router entry for scenario 21",
+    "priority": "normal",
+    "linked_script": "therapy_cancellation_throws_off_whole_day.txt",
+    "fallback_script": "gentle_repair_21.txt",
+    "script_style": "checklist",
+    "fallback_tone": "Tone_Type_21",
+    "tone_compatibility_score": 0.82,
+    "preferred_persona": "The Encourager",
+    "fallback_persona_chain": [
+      "The Anchor",
+      "The Gentle Mirror"
+    ],
+    "emotion_tags": [
+      "guilt",
+      "overwhelm"
+    ],
+    "sensitivity_score": 3,
+    "requires_consent": false,
+    "tone_repair_fallback": "supporter_tone_fallback.txt",
+    "routing_notes": "Scenario 21 requires care in delivery and tone",
+    "skill_level_required": "advanced",
+    "format_tags": [
+      "\ud83e\udde0 step-by-step"
+    ],
+    "environment_tag": "online_interaction",
+    "predicted_emotion_arc": [
+      "burnout",
+      "overwhelm",
+      "fear"
+    ],
+    "next_steps": [
+      "follow_up_checkin.txt",
+      "listen_deeply.txt"
+    ],
+    "trust_impact": "low",
+    "preload_prompt": "This moment needs quiet presence more than answers."
+  },
+  {
+    "scenario_tag": "scenario_22",
+    "description": "Upgraded router entry for scenario 22",
+    "priority": "normal",
+    "linked_script": "volunteer_at_church_wants_to_be_inclusive.txt",
+    "fallback_script": "gentle_repair_22.txt",
+    "script_style": "validation_loop",
+    "fallback_tone": "Tone_Type_22",
+    "tone_compatibility_score": 0.61,
+    "preferred_persona": "The Gentle Mirror",
+    "fallback_persona_chain": [
+      "The Listener",
+      "The Anchor"
+    ],
+    "emotion_tags": [
+      "fear",
+      "hope"
+    ],
+    "sensitivity_score": 4,
+    "requires_consent": false,
+    "tone_repair_fallback": "supporter_tone_fallback.txt",
+    "routing_notes": "Scenario 22 requires care in delivery and tone",
+    "skill_level_required": "advanced",
+    "format_tags": [
+      "\ud83d\udc40 visual"
+    ],
+    "environment_tag": "public_moment",
+    "predicted_emotion_arc": [
+      "fear",
+      "uncertainty",
+      "hope"
+    ],
+    "next_steps": [
+      "offer_space.txt",
+      "how_to_be_present.txt"
+    ],
+    "trust_impact": "moderate",
+    "preload_prompt": "This moment needs quiet presence more than answers."
+  },
+  {
+    "scenario_tag": "scenario_23",
+    "description": "Upgraded router entry for scenario 23",
+    "priority": "normal",
+    "linked_script": "unasked_for_advice_from_a_stranger.txt",
+    "fallback_script": "gentle_repair_23.txt",
+    "script_style": "emotional_reframe",
+    "fallback_tone": "Tone_Type_23",
+    "tone_compatibility_score": 0.83,
+    "preferred_persona": "The Bridge",
+    "fallback_persona_chain": [
+      "The Listener",
+      "The Encourager"
+    ],
+    "emotion_tags": [
+      "hope",
+      "overwhelm"
+    ],
+    "sensitivity_score": 3,
+    "requires_consent": false,
+    "tone_repair_fallback": "supporter_tone_fallback.txt",
+    "routing_notes": "Scenario 23 requires care in delivery and tone",
+    "skill_level_required": "intermediate",
+    "format_tags": [
+      "\ud83d\udcac conversational"
+    ],
+    "environment_tag": "online_interaction",
+    "predicted_emotion_arc": [
+      "overwhelm",
+      "guilt",
+      "resentment"
+    ],
+    "next_steps": [
+      "listen_deeply.txt",
+      "follow_up_checkin.txt"
+    ],
+    "trust_impact": "low",
+    "preload_prompt": "This moment needs quiet presence more than answers."
+  },
+  {
+    "scenario_tag": "scenario_24",
+    "description": "Upgraded router entry for scenario 24",
+    "priority": "normal",
+    "linked_script": "friend_unsure_whether_to_invite_family_out.txt",
+    "fallback_script": "gentle_repair_24.txt",
+    "script_style": "validation_loop",
+    "fallback_tone": "Tone_Type_24",
+    "tone_compatibility_score": 0.74,
+    "preferred_persona": "The Anchor",
+    "fallback_persona_chain": [
+      "The Encourager",
+      "The Listener"
+    ],
+    "emotion_tags": [
+      "fear",
+      "resentment"
+    ],
+    "sensitivity_score": 5,
+    "requires_consent": false,
+    "tone_repair_fallback": "supporter_tone_fallback.txt",
+    "routing_notes": "Scenario 24 requires care in delivery and tone",
+    "skill_level_required": "advanced",
+    "format_tags": [
+      "\ud83e\udde0 step-by-step"
+    ],
+    "environment_tag": "private_space",
+    "predicted_emotion_arc": [
+      "uncertainty",
+      "resentment",
+      "fear"
+    ],
+    "next_steps": [
+      "offer_space.txt",
+      "how_to_be_present.txt"
+    ],
+    "trust_impact": "moderate",
+    "preload_prompt": "This moment needs quiet presence more than answers."
+  },
+  {
+    "scenario_tag": "scenario_25",
+    "description": "Upgraded router entry for scenario 25",
+    "priority": "normal",
+    "linked_script": "older_sibling_worrying_about_future.txt",
+    "fallback_script": "gentle_repair_25.txt",
+    "script_style": "checklist",
+    "fallback_tone": "Tone_Type_25",
+    "tone_compatibility_score": 0.93,
+    "preferred_persona": "The Gentle Mirror",
+    "fallback_persona_chain": [
+      "The Encourager",
+      "The Bridge"
+    ],
+    "emotion_tags": [
+      "hope",
+      "overwhelm"
+    ],
+    "sensitivity_score": 2,
+    "requires_consent": true,
+    "tone_repair_fallback": "supporter_tone_fallback.txt",
+    "routing_notes": "Scenario 25 requires care in delivery and tone",
+    "skill_level_required": "intermediate",
+    "format_tags": [
+      "\ud83d\udcac conversational"
+    ],
+    "environment_tag": "private_space",
+    "predicted_emotion_arc": [
+      "burnout",
+      "resentment",
+      "fear"
+    ],
+    "next_steps": [
+      "listen_deeply.txt",
+      "follow_up_checkin.txt"
+    ],
+    "trust_impact": "low",
+    "preload_prompt": "This moment needs gentle encouragement more than answers."
+  }
+]

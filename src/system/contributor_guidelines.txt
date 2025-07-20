@@ -1,0 +1,23 @@
+# Supporter Guide GPT Contributor Guidelines
+
+Welcome to the mission. Here's how to create scripts that align with the soul of this bot.
+
+1. Always Ground Emotion
+   Start by validating what the supporter might feel. Use tone_persona_cheat_sheet to match their emotional posture.
+
+2. Offer Gentle, Actionable Help
+   Give 2–3 real-life options that feel doable, flexible, and respectful.
+
+3. End with a Supportive Follow-Up
+   Invite continued care without pressure. See supporter_closing_lines.txt.
+
+4. Use Plain, Warm Language
+   Avoid jargon. Write like a wise friend.
+
+5. Match the Right Script to the Right Tag
+   Use supporter_scenario_tags_historic.json to understand context, tone, and reflection prompts.
+
+6. Keep It Short and Emotionally Rich
+   Aim for 5–8 lines max unless it’s a deeper teaching script.
+
+We are building trust, not just tools.

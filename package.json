@@ -4,5 +4,13 @@
   "type": "module",
   "engines": {
     "node": ">=20"
+  },
+  "scripts": {
+    "build:widget": "esbuild src/widget/index.jsx --bundle --minify --outfile=public/widget.js --loader:.jsx=jsx"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "esbuild": "^0.18.10"
   }
 }

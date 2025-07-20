@@ -1,0 +1,122 @@
+📁 Supporter Role Lookup
+🎯 Use this guide when a supporter identifies their role and wants to know how to help
+📦 File Type: hybrid reference (human + AI compatible)
+📤 Export Ready: ✅ JSON | ✅ YAML | ✅ UI Filters | ✅ Tag API
+📊 Sort Mode: by role
+
+---
+
+👤 Role: Neighbor
+🔗 Recommended Scripts:
+
+* grocery\_offer\_story — Offer groceries during errands
+* dinner\_drop\_story — Drop off a meal without asking
+* text\_checkin\_story — Simple presence without expectation
+  🛠️ Best Tool Modes: Text Message, Printable, Guide
+  🎙️ Recommended Tones: Comfort Narrator, Gentle Peer
+  \#emotion\_focus: overload, decision fatigue, invisibility
+  \#priority\_context: everyday support, visible care, easy opt-in
+  🌱 Micro-Mission Themes: Porch-drop offers, one-line texts, ready-to-heat meals
+  🔢 Estimated Coverage: 3/12 script relevance
+
+---
+
+👤 Role: Friend
+🔗 Recommended Scripts:
+
+* text\_checkin\_story — Gentle message without pressure
+* quiet\_presence\_during\_hospital\_story — Emotional presence in crisis
+* coffee\_dropoff\_story — Small uplifting gestures
+* dinner\_drop\_story — Offer nourishment without dialogue
+  🛠️ Best Tool Modes: Text Message, Printable, Guide
+  🎙️ Recommended Tones: Gentle Peer, Comfort Narrator
+  \#emotion\_focus: isolation, fatigue, emotional weight
+  \#priority\_context: quiet presence, drop-in care, emotional backup
+  🌱 Micro-Mission Themes: Light check-ins, care notes, presence without pressure
+  🔢 Estimated Coverage: 4/12 script relevance
+
+---
+
+👤 Role: Coworker
+🔗 Recommended Scripts:
+
+* coffee\_dropoff\_story — Bring comfort during burnout
+* text\_checkin\_story — Non-intrusive support
+* quiet\_presence\_during\_hospital\_story — Silent backup during emergencies
+  🛠️ Best Tool Modes: Printable, Text Message
+  🎙️ Recommended Tones: Respectful Peer, Gentle Peer
+  \#emotion\_focus: burnout, professional stress, helplessness
+  \#priority\_context: low-stakes office gestures, soft boundaries
+  🌱 Micro-Mission Themes: sticky notes, quiet drop-offs, “thinking of you” texts
+  🔢 Estimated Coverage: 3/12 script relevance
+
+---
+
+👤 Role: Teacher
+🔗 Recommended Scripts:
+
+* classroom\_quiet\_space\_story — Build calm spaces proactively
+* shutdown\_during\_transition\_story — Support students without pushing
+* post-meltdown\_reconnect\_story — Repair connection with warmth
+  🛠️ Best Tool Modes: Guide, Printable
+  🎙️ Recommended Tones: Gentle Peer, Family-Wise Narrator
+  \#emotion\_focus: sensory regulation, freeze response, emotional repair
+  \#priority\_context: in-classroom support, proactive inclusion
+  🌱 Micro-Mission Themes: Calm corners, wait-time, gentle language modeling
+  🔢 Estimated Coverage: 3/12 script relevance
+
+---
+
+👤 Role: School Aide or Staff
+🔗 Recommended Scripts:
+
+* shutdown\_during\_transition\_story — Wait without demand
+* office\_staff\_flexibility\_story — Offer reset space
+  🛠️ Best Tool Modes: Guide, Printable
+  🎙️ Recommended Tones: Gentle Peer, Respectful Peer
+  \#emotion\_focus: transition overload, anxiety, dysregulation
+  \#priority\_context: flexible routines, soft landings
+  🌱 Micro-Mission Themes: welcome space, silent presence, no-fuss recovery
+  🔢 Estimated Coverage: 2/12 script relevance
+
+---
+
+👤 Role: Extended Family
+🔗 Recommended Scripts:
+
+* dinner\_drop\_story — Help without needing instructions
+* text\_checkin\_story — Gentle support from afar
+* quiet\_presence\_during\_hospital\_story — Presence in high-stress moments
+  🛠️ Best Tool Modes: Text Message, Printable
+  🎙️ Recommended Tones: Comfort Narrator, Gentle Peer
+  \#emotion\_focus: reconnection, guilt, distance
+  \#priority\_context: asynchronous help, remote care
+  🌱 Micro-Mission Themes: “Thinking of you” texts, hands-off help, visible gestures
+  🔢 Estimated Coverage: 3/12 script relevance
+
+---
+
+👤 Role: Parent or Caregiver
+🔗 Recommended Scripts:
+
+* post-meltdown\_reconnect\_story — Reconnect after emotional intensity
+* shutdown\_during\_transition\_story — Support stuck moments
+  🛠️ Best Tool Modes: Printable, Guide
+  🎙️ Recommended Tones: Family-Wise Narrator, Gentle Peer
+  \#emotion\_focus: emotional recovery, safety, co-regulation
+  \#priority\_context: high-stress recovery, sensory shutdowns
+  🌱 Micro-Mission Themes: shared silence, blanket offers, presence without pressure
+  🔢 Estimated Coverage: 2/12 script relevance
+
+---
+
+👤 Role: Transportation Staff
+🔗 Recommended Scripts:
+
+* bus\_driver\_consistency\_story — Create emotional safety through routine
+  🛠️ Best Tool Modes: Text Message, Guide
+  🎙️ Recommended Tones: Gentle Peer
+  \#emotion\_focus: transition anxiety, routine, belonging
+  \#priority\_context: daily ritual building, morning calm
+  🌱 Micro-Mission Themes: repeatable phrases, visual cues, consistent tone
+  🔢 Estimated Coverage: 1/12 script relevance
