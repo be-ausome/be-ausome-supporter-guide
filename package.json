@@ -7,14 +7,21 @@
   },
   "scripts": {
     "clean": "rimraf public/widget.js",
-    "build:widget": "esbuild src/widget/index.jsx --bundle --minify --outfile=public/widget.js --loader:.jsx=jsx"
+    "build:widget": "esbuild src/widget/index.jsx --bundle --minify --outfile=public/widget.js --loader:.jsx=jsx",
+    "build": "webpack --config webpack.config.js"
   },
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.28.0",
+    "@babel/preset-env": "^7.28.0",
+    "@babel/preset-react": "^7.27.1",
+    "babel-loader": "^10.0.0",
     "esbuild": "^0.18.10",
-    "rimraf": "^5.0.0"
+    "rimraf": "^5.0.0",
+    "webpack": "^5.100.2",
+    "webpack-cli": "^6.0.1"
   }
 }
