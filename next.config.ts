@@ -1,9 +1,8 @@
-﻿import type { NextConfig } from 'next';
-
-const nextConfig: NextConfig = {
-  reactStrictMode: true,
-  trailingSlash: false
+﻿const nextConfig = {
+  experimental: {
+    appDir: false
+  },
+  pageExtensions: ["js", "ts", "tsx"]
 };
 
-export default nextConfig;
-
+module.exports = nextConfig;
