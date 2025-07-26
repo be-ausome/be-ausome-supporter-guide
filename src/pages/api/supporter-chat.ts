@@ -5,7 +5,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     return res.status(405).json({ error: 'Method Not Allowed' });
   }
 
-  const { message, user_role } = req.body;
+  const { message } = req.body;
 
   if (!message) {
     return res.status(400).json({ error: 'Missing message in request body' });
@@ -38,7 +38,6 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
     const data = await openaiRes.json();
 
-    // Add verbose error log if OpenAI sends a structured error
     if (data.error) {
       console.error('OpenAI Error:', data.error);
       throw new Error(data.error.message || 'Unknown error from OpenAI');
@@ -52,6 +51,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     }
 
     res.status(200).json({ reply: { content: reply } });
+
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   } catch (err: any) {
     console.error('GPT error:', err.message || err);
     res.status(500).json({ error: 'Something went wrong generating a response.' });
