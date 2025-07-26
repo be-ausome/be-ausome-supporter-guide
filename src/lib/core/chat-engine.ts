@@ -1,13 +1,28 @@
-// Force Node runtime so we can use JSON imports without Edge limits
 export const runtime = 'nodejs';
 
-import type { ChatRequestBody, ChatResponse } from './types';
-import type { RouteConfig }      from './types';
+import fs from 'fs';
+import path from 'path';
+import type { ChatRequestBody, ChatResponse, RouteConfig } from './types';
 
-// JSON imports – these are written by compile-assets.ts at build time
-import router      from '../generated/router.json';
-import toneMap     from '../generated/tones.json';
-import fallbackMap from '../generated/fallbacks.json';
+/*──────────────────────────────────────────────
+  Load generated JSON bundle (always present)
+──────────────────────────────────────────────*/
+const GENERATED_ROOT = path.join(
+  process.cwd(),              // /var/task in Lambda
+  'src',
+  'lib',
+  'generated'
+);
+
+const router: any = JSON.parse(
+  fs.readFileSync(path.join(GENERATED_ROOT, 'router.json'), 'utf8')
+);
+const toneMap: Record<string, any> = JSON.parse(
+  fs.readFileSync(path.join(GENERATED_ROOT, 'tones.json'), 'utf8')
+);
+const fallbackMap: Record<string, string> = JSON.parse(
+  fs.readFileSync(path.join(GENERATED_ROOT, 'fallbacks.json'), 'utf8')
+);
 
 /* ───── Adjusted for role-keyed router ───── */
 function selectRoute(body: ChatRequestBody): RouteConfig {
