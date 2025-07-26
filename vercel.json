@@ -1,8 +1,9 @@
 {
   "framework": "nextjs",
   "functions": {
-    "src/pages/api/**/*.ts": {
-      "includeFiles": "src/lib/assets/**"
+    // Match every built API λ (.js) no matter where Next puts it
+    "api/**/*.js": {
+      "includeFiles": "src/lib/assets/**/*"
     }
   }
 }
