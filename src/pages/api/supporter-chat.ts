@@ -34,7 +34,7 @@ export default async function handler(
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        model: 'gpt-3.5-turbo', // fallback-safe; switch to 'gpt-4' if enabled
+        model: 'gpt-4o', // fallback-safe; switch to 'gpt-4' if enabled
         messages: [
           {
             role: 'system',
