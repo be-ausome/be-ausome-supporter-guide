@@ -1,21 +1,17 @@
-import type { NextApiRequest, NextApiResponse } from 'next';
-
-type ChatRequestBody = {
-  message: string;
-  user_role?: string;
-};
-
-type ChatResponse = {
-  reply?: {
-    content: string;
-  };
-  error?: string;
-};
-
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<ChatResponse>
 ) {
+  // ✅ Add CORS headers
+  res.setHeader("Access-Control-Allow-Origin", "https://be-ausome.com");
+  res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+
+  // ✅ Handle preflight request
+  if (req.method === 'OPTIONS') {
+    return res.status(200).end();
+  }
+
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method Not Allowed' });
   }
@@ -34,7 +30,7 @@ export default async function handler(
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        model: 'gpt-4o', // fallback-safe; switch to 'gpt-4' if enabled
+        model: 'gpt-4o',
         messages: [
           {
             role: 'system',
