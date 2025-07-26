@@ -1,10 +1,7 @@
 {
   "framework": "nextjs",
-
   "functions": {
-    // All API routes under pages/api that end in .ts
     "src/pages/api/**/*.ts": {
-      // ⬅️  Ship every file in src/lib/assets/** with the lambda
       "includeFiles": "src/lib/assets/**"
     }
   }
