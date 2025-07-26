@@ -1,3 +1,15 @@
+import type { NextApiRequest, NextApiResponse } from 'next';
+
+type ChatRequestBody = {
+  message: string;
+  user_role?: string;
+};
+
+type ChatResponse = {
+  reply?: { content: string };
+  error?: string;
+};
+
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<ChatResponse>
