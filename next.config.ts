@@ -1,10 +1,8 @@
-﻿
-@'
-import type { NextConfig } from "next";
+﻿import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  experimental: { appDir: true },  // keeps src/app/… working
+  experimental: { appDir: true },
   trailingSlash: false
 };
 
