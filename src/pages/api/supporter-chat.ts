@@ -1,84 +1,25 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-
-type ChatRequestBody = {
-  message: string;
-  user_role?: string;
-};
-
-type ChatResponse = {
-  reply?: { content: string };
-  error?: string;
-};
+import { getReply } from '@/lib/core/chat-engine';
+import type { ChatRequestBody, ChatResponse } from '@/lib/core/types';
 
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<ChatResponse>
 ) {
-  // ✅ Add CORS headers
-  res.setHeader("Access-Control-Allow-Origin", "https://be-ausome.com");
-  res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
-  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+  /* ---------- CORS ---------- */
+  res.setHeader('Access-Control-Allow-Origin', 'https://be-ausome.com');
+  res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 
-  // ✅ Handle preflight request
-  if (req.method === 'OPTIONS') {
-    return res.status(200).end();
+  if (req.method === 'OPTIONS') return res.status(200).end();
+  if (req.method !== 'POST')    return res.status(405).json({ error: 'Method Not Allowed' });
+
+  const body = req.body as ChatRequestBody;
+
+  if (!body.message?.trim()) {
+    return res.status(400).json({ error: 'Missing message' });
   }
 
-  if (req.method !== 'POST') {
-    return res.status(405).json({ error: 'Method Not Allowed' });
-  }
-
-  const { message, user_role }: ChatRequestBody = req.body;
-
-  if (!message) {
-    return res.status(400).json({ error: 'Missing message in request body' });
-  }
-
-  try {
-    const openaiRes = await fetch('https://api.openai.com/v1/chat/completions', {
-      method: 'POST',
-      headers: {
-        'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`,
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        model: 'gpt-4o',
-        messages: [
-          {
-            role: 'system',
-            content: `You are a warm, grounded, autism-aware assistant helping friends and neighbors support autism families. Use helpful, plain language. The user role is: ${user_role || 'unspecified'}.`
-          },
-          {
-            role: 'user',
-            content: message
-          }
-        ],
-        temperature: 0.7,
-        max_tokens: 400
-      })
-    });
-
-    const data = await openaiRes.json();
-
-    if (data.error) {
-      console.error('OpenAI Error:', data.error);
-      throw new Error(data.error.message || 'Unknown error from OpenAI');
-    }
-
-    const reply = data?.choices?.[0]?.message?.content;
-
-    if (!reply) {
-      console.error('OpenAI raw response (missing reply):', JSON.stringify(data, null, 2));
-      throw new Error('No reply from OpenAI');
-    }
-
-    res.status(200).json({ reply: { content: reply } });
-  } catch (err: unknown) {
-    if (err instanceof Error) {
-      console.error('GPT error:', err.message);
-    } else {
-      console.error('Unknown GPT error:', err);
-    }
-    res.status(500).json({ error: 'Something went wrong generating a response.' });
-  }
+  const reply = await getReply(body);
+  res.status(200).json(reply);
 }
