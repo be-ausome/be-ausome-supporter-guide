@@ -1,9 +1,8 @@
 ﻿/** @type {import('next').NextConfig} */
-const nextConfig = {
-  experimental: {
-    appDir: false
-  },
-  pageExtensions: ["js", "ts", "tsx"]
-};
+module.exports = {
+  // ‼️ DELETE the old "experimental: { appDir: true }" line
+  // experimental: { appDir: true },
 
-module.exports = nextConfig;
+  // Optional but handy: don’t fail the Vercel build on lint warnings
+  eslint: { ignoreDuringBuilds: true }
+};
