@@ -1,6 +1,6 @@
 export interface ChatRequestBody {
   message: string;
-  user_role?: string;        // “neighbor”, “teacher”, etc.
+  user_role?: string;
 }
 
 export interface ChatResponse {
@@ -9,9 +9,9 @@ export interface ChatResponse {
 }
 
 export interface RouteConfig {
-  id: string;                        // e.g. "neighbor-default"
-  systemPrompt: string;              // path to /assets/system/*.txt
-  tone: string;                      // tone id in /assets/tones/*.json
-  fallback: string;                  // path to /assets/fallbacks/*.txt
-  roleSnippet?: string;              // optional path to /assets/roles/*.txt
+  id: string;                 // e.g. "neighbor_default"
+  systemPrompt: string;       // path into original asset tree (kept here for reference)
+  tone: string;               // tone key
+  fallbackId: string;         // 🔸 maps to key in generated fallbacks.json
+  roleSnippet?: string;
 }
