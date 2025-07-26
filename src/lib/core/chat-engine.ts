@@ -5,16 +5,43 @@ import type { ChatRequestBody, ChatResponse } from './types';
 import type { RouteConfig }      from './types';
 
 // JSON imports – these are written by compile-assets.ts at build time
-import router      from '@/lib/generated/router.json';
-import toneMap     from '@/lib/generated/tones.json';
-import fallbackMap from '@/lib/generated/fallbacks.json';
+import router      from '../generated/router.json';
+import toneMap     from '../generated/tones.json';
+import fallbackMap from '../generated/fallbacks.json';
 
+/* ───── Adjusted for role-keyed router ───── */
 function selectRoute(body: ChatRequestBody): RouteConfig {
-  const direct = (router as RouteConfig[]).find(r =>
-    r.id.startsWith(body.user_role || '')
-  );
-  return direct ?? (router as RouteConfig[])[0];
+  const role = body.user_role ?? (router as any).__fallback_role__ ?? 'neighbor';
+
+  const roleArray: any[] | undefined = (router as any)[role];
+
+
+  if (Array.isArray(roleArray) && roleArray.length) {
+    const match = roleArray.find((r) =>
+      r.keywords?.some((kw: string) =>
+        body.message.toLowerCase().includes(kw.toLowerCase())
+      )
+    );
+    const picked = match ?? roleArray[0];
+
+    return {
+      id: `${role}_${picked.script_id}`,
+      tone: picked.tone_tags?.[0] ?? 'default',
+      systemPrompt: (router as any).system_prompt,
+      fallbackId: picked.script_id,
+      roleSnippet: picked.delivery_format ?? undefined
+    };
+  }
+
+  // Fallback if role missing
+  return {
+    id: `${role}_default`,
+    tone: 'default',
+    systemPrompt: (router as any).system_prompt,
+    fallbackId: '__generic__'
+  };
 }
+
 
 export async function getReply(body: ChatRequestBody): Promise<ChatResponse> {
   const route = selectRoute(body);
