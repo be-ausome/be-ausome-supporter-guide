@@ -2,7 +2,7 @@
   "framework": "nextjs",
   "functions": {
     "src/pages/api/**/*.ts": {
-      "includeFiles": "src/lib/assets/**/*"
+      "includeFiles": "src/lib/generated/**/*"
     }
   }
 }
