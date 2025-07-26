@@ -1,11 +1,26 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 
-export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+type ChatRequestBody = {
+  message: string;
+  user_role?: string;
+};
+
+type ChatResponse = {
+  reply?: {
+    content: string;
+  };
+  error?: string;
+};
+
+export default async function handler(
+  req: NextApiRequest,
+  res: NextApiResponse<ChatResponse>
+) {
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method Not Allowed' });
   }
 
-  const { message } = req.body;
+  const { message, user_role }: ChatRequestBody = req.body;
 
   if (!message) {
     return res.status(400).json({ error: 'Missing message in request body' });
@@ -19,12 +34,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        model: 'gpt-4', // or 'gpt-3.5-turbo'
+        model: 'gpt-3.5-turbo', // fallback-safe; switch to 'gpt-4' if enabled
         messages: [
           {
             role: 'system',
-            content:
-              'You are a warm, grounded, autism-aware assistant helping friends and neighbors support autism families. Use helpful, plain language.'
+            content: `You are a warm, grounded, autism-aware assistant helping friends and neighbors support autism families. Use helpful, plain language. The user role is: ${user_role || 'unspecified'}.`
           },
           {
             role: 'user',
@@ -51,10 +65,12 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     }
 
     res.status(200).json({ reply: { content: reply } });
-
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  } catch (err: any) {
-    console.error('GPT error:', err.message || err);
+  } catch (err: unknown) {
+    if (err instanceof Error) {
+      console.error('GPT error:', err.message);
+    } else {
+      console.error('Unknown GPT error:', err);
+    }
     res.status(500).json({ error: 'Something went wrong generating a response.' });
   }
 }
